@@ -2,17 +2,39 @@
 <html>
 <head>
   <title>Hello, World!</title>
-  <style>
-    body {
-      color: #ffffff;
-      background-color: #0188cc;
-      font-family: Arial, sans-serif;  
-      font-size:14px;
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="webpage/style/style.css"/>
 </head>
 <body>
-  <div align="center"><h1>Responsense. We maximize good days. Finally. Last try hopefully. This time totally.</h1></div>
+
+
+  <div align="center">
+  	<img align="middle" src="webpage/resources/logo_plus_name.png" alt="responsense" height="60%" width="80%">
   </div>
+
+
+
+
+
+<script>
+function openTab(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+
+
+
 </body>
 </html>
