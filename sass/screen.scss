@@ -1,0 +1,58 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700');
+ body, html {
+  // background-size: 238px 151px;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
+  color: #888;
+ }
+ html {
+  background: url('../webpage/resources/gcmap-tile-01.png'); 
+ }
+ #hole {
+  position:absolute;
+ }
+.logo-nav {
+  // background: #f00;
+  margin: 140px auto 0 auto;
+  position: relative;
+  width: 960px;
+  img {
+    position: relative;
+    display:block;
+    margin: 0 auto;
+    width: 200px;
+  }
+  .nav-buttons {
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin: -50px 0 0 -50px;
+    width: 100px;
+    height: 100px;
+    .button {
+      text-transform: uppercase;
+      // background: #f00;
+      text-decoration: none;
+      display: block;
+      height: 40px;
+      width: 200px;
+      line-height: 40px;
+      margin-left: -100px;
+      margin-top: -20px;
+      position: absolute;
+      text-align: center;
+      @include transition(color .3s);
+      &:hover {
+        color: #E5851C;
+        cursor: pointer;
+      }
+    }
+  }
+}
