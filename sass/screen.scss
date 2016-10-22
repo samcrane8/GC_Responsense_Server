@@ -29,6 +29,20 @@
   top: 0;
   @include transition(opacity 1s);
  }
+.hole-margin {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 400px;
+  &#hm-right {
+    left: 100%;
+  }
+  &#hm-down {
+    top: 100%;
+  }
+}
 .logo-nav {
   // background: #f00;
   margin: 140px auto 0 auto;
