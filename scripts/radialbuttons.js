@@ -1,8 +1,8 @@
 $(document).ready(function() {
 	$('.button').each(function(index) {
 		$(this).css({
-			'left' : (50 - 120*Math.cos(-0.5 * Math.PI - 2*(1/5)*index*Math.PI)).toFixed(4) + "%",
-			'top'  : (50 + 120*Math.sin(-0.5 * Math.PI - 2*(1/5)*index*Math.PI)).toFixed(4) + "%"
+			'left' : (50 - 120*Math.cos(-0.5 * Math.PI - 2*index/5*Math.PI)).toFixed(4) + "%",
+			'top'  : (50 + 120*Math.sin(-0.5 * Math.PI - 2*index/5*Math.PI)).toFixed(4) + "%"
 		});
 		if (index == 0) {
 			$(this).css({
