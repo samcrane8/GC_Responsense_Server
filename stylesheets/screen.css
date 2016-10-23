@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,700");
-/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -119,20 +119,51 @@ html {
   top: 100%;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
+.logo-nav.side #main-logo {
+  left: -40%;
+}
+/* line 50, ../sass/screen.scss */
+.logo-nav.side .nav-buttons {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  margin: -101px 0 0 120px;
+}
+/* line 55, ../sass/screen.scss */
+.logo-nav.side .nav-buttons .button {
+  margin: 5px 0;
+  text-transform: uppercase;
+  display: block;
+  height: 30px;
+  width: 120px;
+  line-height: 40px;
+  position: relative;
+  text-align: left;
+}
+/* line 65, ../sass/screen.scss */
+.logo-nav.side .nav-buttons .button p {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  padding-left: 5px;
+  top: -5px;
+}
+
+/* line 76, ../sass/screen.scss */
 .logo-nav {
   margin: 140px auto 0 auto;
   position: relative;
   width: 960px;
 }
-/* line 51, ../sass/screen.scss */
-.logo-nav img {
+/* line 81, ../sass/screen.scss */
+.logo-nav #main-logo {
   position: relative;
   display: block;
   margin: 0 auto;
   width: 200px;
 }
-/* line 57, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 .logo-nav .nav-buttons {
   position: absolute;
   top: 50%;
@@ -140,11 +171,14 @@ html {
   margin: -50px 0 0 -50px;
   width: 100px;
   height: 100px;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
-/* line 64, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 .logo-nav .nav-buttons .button {
   text-transform: uppercase;
-  text-decoration: none;
   display: block;
   height: 40px;
   width: 200px;
@@ -153,13 +187,23 @@ html {
   margin-top: -20px;
   position: absolute;
   text-align: center;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-/* line 77, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 .logo-nav .nav-buttons .button:hover {
   color: #E5851C;
   cursor: pointer;
+}
+/* line 112, ../sass/screen.scss */
+.logo-nav .nav-buttons .nb-ico {
+  float: left;
+  height: 30px;
+  width: 30px;
 }
