@@ -5,6 +5,7 @@
 
 @import "compass/reset";
 @import "compass/css3";
+@import "hole";
 @import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,700');
  body, html {
   // background-size: 238px 151px;
@@ -16,103 +17,117 @@
   background: url('../webpage/resources/gcmap-tile-01.png'); 
   overflow: hidden;
  }
- #hole {
-  position:absolute;
-  top: 0;
-  left: 0;
- }
- #hole-blocker {
-  background: #fff;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  @include transition(opacity 1s);
- }
-.hole-margin {
-  background: #fff;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 400px;
-  &#hm-right {
-    left: 100%;
-  }
-  &#hm-down {
-    top: 100%;
-  }
-}
-.logo-nav.side {
-  #main-logo {
-    left: -40%;
-  }
-  .nav-buttons {
-    position: absolute;
-    top: 50%;
-    left: 10%;
-    margin: -101px 0 0 120px;
-    .button {
-      // background: #f00;
-      margin: 5px 0;
-      text-transform: uppercase;
-      display: block;
-      height: 30px;
-      width: 120px;
-      line-height: 40px;
-      position: relative;
-      text-align: left;
-      p {
-        position: relative;
-        display: inline-block;
-        // background: #0f0;
-        margin: 0;
-        padding-left: 5px;
-        top: -5px;
-      }
-    }
+.content {
+  width: 960px;
+  margin: 140px auto 0 auto;
+  h1 {
+    font-size: 30px;
   }
 }
 .logo-nav {
-  // background: #f00;
-  margin: 140px auto 0 auto;
   position: relative;
-  width: 960px;
+  float: left;
+  width: 200px;
+  margin-left: calc(50% - 100px);
+  @include transition(all .5s ease);
   #main-logo {
     position: relative;
     display:block;
-    margin: 0 auto;
     width: 200px;
+    z-index: 100;
+
   }
-  .nav-buttons {
+  #nav-buttons {
     position: absolute;
     top:50%;
     left:50%;
-    margin: -50px 0 0 -50px;
-    width: 100px;
-    height: 100px;
-    @include transition(all 1s);
+    margin: -250px 0 0 -250px;
+    width: 500px;
+    height: 500px;
+    // background: #0f0;
+    // @include transition(all 1s);
     .button {
-      text-transform: uppercase;
-      display: block;
-      height: 40px;
-      width: 200px;
-      line-height: 40px;
-      margin-left: -100px;
-      margin-top: -20px;
+      // background: #f00;
+      z-index: 101;
+      line-height: 30px;
       position: absolute;
-      text-align: center;
-      @include transition(all 1s);
-      @include transition(color .3s);
-      &:hover {
-        color: #E5851C;
-        cursor: pointer;
+      margin-top: -15px; 
+      
+      p {
+        // padding-left: 5px;
+        float: left;
       }
+      &.left p {
+        // padding: 0 5px 0 0;
+      }
+    } 
+  }
+}
+.logo-nav.side {
+  margin-left: 0; 
+  // #main-logo {
+  //   margin-left: 0; 
+  // }
+}
+.button {
+  text-transform: uppercase;
+  &:hover {
+    color: #E5851C;
+    cursor: pointer;
+  } 
+  @include transition(color .3s);
+}
+#nav-buttons-side {
+  background: #f00;
+  width: 200px;
+  .button {
+    float: left;
+    height: 30px;
+    width: 100%;
+    line-height: 30px;
+    margin: 5px 0 5px 20%;
+    p {
+      float: left;
+      padding-left: 5px;
     }
     .nb-ico {
       float: left;
       height: 30px;
       width: 30px;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+      .cover {
+        position: relative;
+        top: -30px;
+        height: 30px;
+        width: 30px;
+        background: #888;
+        @include border-radius(15px);
+        @include transform(scale(0));
+        @include transition(all .3s ease-out);
+      }
     }
+    &:hover {
+      .cover {
+        @include transform(scale(1));
+      }
+    }
+  }
+}
+.text {
+  // background: #f0f;
+  width: calc(100% - 220px);
+  float: right;
+  margin-top: 200px;
+  opacity: 0;
+  @include transition(all .7s ease);
+  p {
+    z-index: 100;
+  }
+  &.side {
+    opacity: 1;
+    margin-top: 0;
   }
 }
