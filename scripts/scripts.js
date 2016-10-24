@@ -8,7 +8,6 @@ $(document).ready(function() {
 		if ($('.logo-nav').hasClass('side')) {
 			$('.text').toggleClass('side');
 			setTimeout(function() {
-
 				$('.logo-nav').toggleClass('side');
 				$('#nav-buttons').fadeIn( "fast");
 				$('.button.cent').each(function(index) {
@@ -22,7 +21,7 @@ $(document).ready(function() {
 			$('.logo-nav').toggleClass('side');
 			setTimeout(function() { 
 		        $('.text').toggleClass('side');
-		    }, 500);
+		    }, 800);
 			$('#nav-buttons').fadeOut( "fast");
 			$('.button.cent').each(function(index) {
 				$(this).fadeOut( "fast");

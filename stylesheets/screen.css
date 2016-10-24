@@ -139,10 +139,10 @@ html {
   float: left;
   width: 200px;
   margin-left: calc(50% - 100px);
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  -moz-transition: all 0.8s cubic-bezier(0.65, 0.09, 0.35, 0.96);
+  -o-transition: all 0.8s cubic-bezier(0.65, 0.09, 0.35, 0.96);
+  -webkit-transition: all 0.8s cubic-bezier(0.65, 0.09, 0.35, 0.96);
+  transition: all 0.8s cubic-bezier(0.65, 0.09, 0.35, 0.96);
 }
 /* line 33, ../sass/screen.scss */
 .logo-nav #main-logo {
@@ -251,7 +251,7 @@ html {
 .text {
   width: calc(100% - 220px);
   float: right;
-  margin-top: 200px;
+  margin-top: 130px;
   opacity: 0;
   -moz-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;

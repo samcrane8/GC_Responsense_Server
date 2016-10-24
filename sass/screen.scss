@@ -29,7 +29,7 @@
   float: left;
   width: 200px;
   margin-left: calc(50% - 100px);
-  @include transition(all .5s ease);
+  @include transition(all 0.8s cubic-bezier(.65,.09,.35,.96));
   #main-logo {
     position: relative;
     display:block;
@@ -120,7 +120,7 @@
   // background: #f0f;
   width: calc(100% - 220px);
   float: right;
-  margin-top: 200px;
+  margin-top: 130px;
   opacity: 0;
   @include transition(all .7s ease);
   p {
