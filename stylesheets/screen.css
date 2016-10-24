@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @import url("https://fonts.googleapis.com/css?family=Quicksand:300,400,700");
-/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -25,45 +25,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -126,7 +126,7 @@ html {
 /* line 20, ../sass/screen.scss */
 .content {
   width: 960px;
-  margin: 140px auto 0 auto;
+  margin: 0 auto;
 }
 /* line 23, ../sass/screen.scss */
 .content h1 {
@@ -138,7 +138,7 @@ html {
   position: relative;
   float: left;
   width: 200px;
-  margin-left: calc(50% - 100px);
+  margin: 140px 0 0 calc(50% - 100px);
   -moz-transition: all 0.8s cubic-bezier(0.65, 0.09, 0.35, 0.96);
   -o-transition: all 0.8s cubic-bezier(0.65, 0.09, 0.35, 0.96);
   -webkit-transition: all 0.8s cubic-bezier(0.65, 0.09, 0.35, 0.96);
@@ -174,7 +174,7 @@ html {
 
 /* line 66, ../sass/screen.scss */
 .logo-nav.side {
-  margin-left: 0;
+  margin: 30px 0 0 0;
 }
 
 /* line 72, ../sass/screen.scss */
@@ -251,19 +251,33 @@ html {
 .text {
   width: calc(100% - 220px);
   float: right;
-  margin-top: 130px;
+  margin-top: 200px;
   opacity: 0;
+  overflow: scroll;
+  height: 100vh;
   -moz-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
-/* line 126, ../sass/screen.scss */
-.text p {
-  z-index: 100;
+/* line 128, ../sass/screen.scss */
+.text article {
+  margin: 0 0 30px 0;
 }
-/* line 129, ../sass/screen.scss */
+/* line 130, ../sass/screen.scss */
+.text article p {
+  text-align: justify;
+  width: 80%;
+  z-index: 100;
+  font-weight: 400;
+  padding: 6px 0 0 7px;
+}
+/* line 138, ../sass/screen.scss */
+.text article:first-child {
+  margin-top: 90px;
+}
+/* line 142, ../sass/screen.scss */
 .text.side {
   opacity: 1;
-  margin-top: 0;
+  margin-top: 0px;
 }
