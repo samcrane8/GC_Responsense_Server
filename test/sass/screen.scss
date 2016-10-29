@@ -1,0 +1,43 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+body {
+  background: #f00;
+}
+.content {
+  background: #0f0;
+  width: 960px;
+  margin: 0 auto;
+  position: relative;
+  .side-bar {
+    background: #0ff;
+    position: fixed;
+    left: 50%;
+    top: 0%;
+    transform: translateX(-480px);
+    width: 200px;
+    @media screen and (max-width: 960px) {
+      left: 0;
+    transform: none;
+    }
+  }
+  .text {
+    background: #ff0;
+    width: calc(100% - 200px);
+    float: right;
+    opacity: 0;
+    margin-top: 150px;
+    position: absolute;
+    right: 0;
+    @include transition(all 1s cubic-bezier(.07,.79,.61,.99));
+    &.visible {
+      margin-top: 0;
+      opacity: 1;
+    }
+  }
+}

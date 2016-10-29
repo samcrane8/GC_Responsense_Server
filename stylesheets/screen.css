@@ -124,16 +124,22 @@ html {
 }
 
 /* line 20, ../sass/screen.scss */
+body {
+  overflow: scroll;
+}
+
+/* line 24, ../sass/screen.scss */
 .content {
   width: 960px;
   margin: 0 auto;
 }
-/* line 23, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 .content h1 {
   font-size: 30px;
+  text-transform: uppercase;
 }
 
-/* line 27, ../sass/screen.scss */
+/* line 33, ../sass/screen.scss */
 .logo-nav {
   position: relative;
   float: left;
@@ -144,14 +150,14 @@ html {
   -webkit-transition: all 0.8s cubic-bezier(0.65, 0.09, 0.35, 0.96);
   transition: all 0.8s cubic-bezier(0.65, 0.09, 0.35, 0.96);
 }
-/* line 33, ../sass/screen.scss */
+/* line 39, ../sass/screen.scss */
 .logo-nav #main-logo {
   position: relative;
   display: block;
   width: 200px;
   z-index: 100;
 }
-/* line 40, ../sass/screen.scss */
+/* line 46, ../sass/screen.scss */
 .logo-nav #nav-buttons {
   position: absolute;
   top: 50%;
@@ -160,24 +166,24 @@ html {
   width: 500px;
   height: 500px;
 }
-/* line 49, ../sass/screen.scss */
+/* line 55, ../sass/screen.scss */
 .logo-nav #nav-buttons .button {
   z-index: 101;
   line-height: 30px;
   position: absolute;
   margin-top: -15px;
 }
-/* line 56, ../sass/screen.scss */
+/* line 62, ../sass/screen.scss */
 .logo-nav #nav-buttons .button p {
   float: left;
 }
 
-/* line 66, ../sass/screen.scss */
+/* line 72, ../sass/screen.scss */
 .logo-nav.side {
   margin: 30px 0 0 0;
 }
 
-/* line 72, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
 .button {
   text-transform: uppercase;
   -moz-transition: color 0.3s;
@@ -185,18 +191,18 @@ html {
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-/* line 74, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
 .button:hover {
   color: #E5851C;
   cursor: pointer;
 }
 
-/* line 80, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 #nav-buttons-side {
   background: #f00;
   width: 200px;
 }
-/* line 83, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 #nav-buttons-side .button {
   float: left;
   height: 30px;
@@ -204,23 +210,23 @@ html {
   line-height: 30px;
   margin: 5px 0 5px 20%;
 }
-/* line 89, ../sass/screen.scss */
+/* line 95, ../sass/screen.scss */
 #nav-buttons-side .button p {
   float: left;
   padding-left: 5px;
 }
-/* line 93, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 #nav-buttons-side .button .nb-ico {
   float: left;
   height: 30px;
   width: 30px;
 }
-/* line 97, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 #nav-buttons-side .button .nb-ico img {
   height: 100%;
   width: 100%;
 }
-/* line 101, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 #nav-buttons-side .button .nb-ico .cover {
   position: relative;
   top: -30px;
@@ -239,7 +245,7 @@ html {
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-/* line 113, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
 #nav-buttons-side .button:hover .cover {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
@@ -247,24 +253,24 @@ html {
   transform: scale(1);
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 125, ../sass/screen.scss */
 .text {
   width: calc(100% - 220px);
   float: right;
+  position: relative;
   margin-top: 200px;
   opacity: 0;
-  overflow: scroll;
   height: 100vh;
   -moz-transition: all 0.7s ease;
   -o-transition: all 0.7s ease;
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
-/* line 128, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 .text article {
   margin: 0 0 30px 0;
 }
-/* line 130, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 .text article p {
   text-align: justify;
   width: 80%;
@@ -272,11 +278,11 @@ html {
   font-weight: 400;
   padding: 6px 0 0 7px;
 }
-/* line 138, ../sass/screen.scss */
+/* line 144, ../sass/screen.scss */
 .text article:first-child {
   margin-top: 90px;
 }
-/* line 142, ../sass/screen.scss */
+/* line 148, ../sass/screen.scss */
 .text.side {
   opacity: 1;
   margin-top: 0px;

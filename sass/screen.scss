@@ -17,11 +17,17 @@
   background: url('../webpage/resources/gcmap-tile-01.png'); 
   overflow: hidden;
  }
+ body {
+
+  overflow: scroll;
+ }
 .content {
   width: 960px;
   margin: 0 auto;
   h1 {
     font-size: 30px;
+    text-transform: uppercase;
+    // color: #E5851C;
   }
 }
 .logo-nav {
@@ -120,9 +126,9 @@
   // background: #f0f;
   width: calc(100% - 220px);
   float: right;
+  position: relative;
   margin-top: 200px;
   opacity: 0;
-  overflow: scroll;
   height: 100vh;
   @include transition(all .7s ease);
   article {
