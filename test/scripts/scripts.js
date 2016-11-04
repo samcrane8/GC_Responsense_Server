@@ -2,6 +2,7 @@ var loadTarget = true;
 var side = false;
 $(document).ready(function() {
 	radialButton();
+	
 	$('.button.cent').on('click', function() {
 		if (side) return;
 		$('.side-bar').toggleClass('side');
@@ -18,7 +19,13 @@ $(document).ready(function() {
 	});
 });
 $(window).on('hashchange', function() {
+	side = window.location.hash.length !== 0;
 	if (side) loadContent();
+	else {
+		$('.side-bar').toggleClass('side');
+		$('.text#' + (loadTarget ? 0 : 1)).toggleClass('visible');
+		loadTarget = !loadTarget;
+	}
 });
 function loadContent() {
 	$('.text#' + (loadTarget ? 0 : 1)).toggleClass('visible');
