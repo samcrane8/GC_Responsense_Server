@@ -12,17 +12,6 @@ body {
 html {
   overflow-y: scroll; 
 }
-#cover {
-  position: fixed;
-  background: #fff;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  mask-image: url('../test.png');
-  mask-type: luminance;
-}
-#masking {
-}
 .content {
   background: #0f0;
   width: 960px;
@@ -31,25 +20,31 @@ html {
   .side-bar {
     background: #0ff;
     position: fixed;
-    left: 50%;
+    left: calc(50% - 100px);
     top: 20%;
-    transform: translateX(-100px);
     width: 200px;
     @include transition(left 1s ease,
-                        top 1s ease);
+                        top 1s ease,
+                        width 1s ease);
     img {
       position: relative;
       display:block;
       width: 200px;
       z-index: 100;
-    }
-    @media screen and (max-width: 960px) {
-      left: 0;
-      transform: none;
+      @include transition(width 1s ease);
     }
     &.side {
       left: calc(50% - 480px);
       top: 0;
+      width: 100px;
+      img {
+        width: 100px;
+      }
+    }
+    @media screen and (max-width: 960px) {
+      &.side {
+        left: 0;
+      }
     }
     #nav-buttons {
       position: absolute;

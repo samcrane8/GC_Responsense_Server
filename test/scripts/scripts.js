@@ -1,33 +1,41 @@
 var loadTarget = true;
-var changed = false;
+var side = false;
 $(document).ready(function() {
 	radialButton();
-	$('#main-logo').on('click', function() {
-		console.log(1);
+	$('.button.cent').on('click', function() {
+		if (side) return;
 		$('.side-bar').toggleClass('side');
-	})
-	// $('.text#0').html(loadText(window.location.hash.substring(1))).toggleClass('visible');
+		loadTarget = true;
+		$('.text#0').html(loadText(window.location.hash.substring(1))).toggleClass('visible');
+		side = true;
+	});
+	$('#main-logo').on('click', function() {
+		if (!side) return;
+		$('.side-bar').toggleClass('side');
+		$('.text#' + (loadTarget ? 0 : 1)).toggleClass('visible');
+		loadTarget = !loadTarget;
+		side = false;
+	});
 });
 $(window).on('hashchange', function() {
-	loadContent();
+	if (side) loadContent();
 });
 function loadContent() {
 	$('.text#' + (loadTarget ? 0 : 1)).toggleClass('visible');
 	$('.text#' + (loadTarget ? 1 : 0)).html(loadText(window.location.hash.substring(1))).toggleClass('visible');
-	// $('.text#' + (loadTarget ? 1 : 0)).toggleClass('visible');
 	loadTarget = !loadTarget;
 }
 function loadText(button) {
-	if (button === 'a') {
-		return "a";
-	} else if (button === 'b') {
-		return "b";
-	} else if (button === 'c') {
-		return "c";
-	} else if (button === 'd') {
-		return "d";
-	} else if (button === 'e') {
-		return "e";
+	if (button === 'map') {
+		return "map";
+	} else if (button === 'contact') {
+		return "contact";
+	} else if (button === 'team') {
+		return "team";
+	} else if (button === 'blog') {
+		return "blog";
+	} else if (button === 'about') {
+		return "about";
 	}
 }
 function radialButton() {
