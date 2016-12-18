@@ -7,6 +7,7 @@ $(document).ready(function() {
 		loadTarget = true;
 		$('.text#0').html(loadText(window.location.hash.substring(1))).toggleClass('visible');
 		side = true;
+		$('#cent-buttons').fadeOut();
 	}
 		// if ($('.side-bar').hasClass('side'))
 		// 	$('.side-bar').toggleClass('side');
@@ -29,15 +30,17 @@ $(document).ready(function() {
 	});
 	$('#main-logo').on('click', function() {
 		if (!side) return;
+		removeHash();
+		$('#cent-buttons').fadeIn();
 		$('.side-bar').toggleClass('side');
 		$('.text#' + (loadTarget ? 0 : 1)).toggleClass('visible');
 		loadTarget = !loadTarget;
-		side = false;	
+		side = false;
 	});
 });
 $(window).on('hashchange', function() {
-	console.log(1);
 	if (window.location.hash.length === 0) {
+		$('#cent-buttons').fadeIn();
 		if (!side) return;
 		$('.side-bar').toggleClass('side');
 		$('.text#' + (loadTarget ? 0 : 1)).toggleClass('visible');
@@ -47,6 +50,8 @@ $(window).on('hashchange', function() {
 		if (!side) {
 			$('.side-bar').toggleClass('side');
 			side = true;
+		} else if ($('#cent-buttons').is(':visible')) {
+			$('#cent-buttons').fadeOut();
 		}
 		loadContent();
 	}
@@ -103,4 +108,8 @@ function radialButton() {
 			});
 		}
 	});
+}
+function removeHash () { 
+    history.pushState("", document.title, window.location.pathname
+                                                       + window.location.search);
 }
