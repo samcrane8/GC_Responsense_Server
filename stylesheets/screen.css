@@ -266,6 +266,17 @@ body {
   -webkit-transition: all 0.7s ease;
   transition: all 0.7s ease;
 }
+
+.text .content .about {
+  display: none;
+}
+
+.text .content .about {}
+.text .content .contact {}
+.text .content .map {}
+.text .content .blog {}
+.text .content .team {}
+
 /* line 134, ../sass/screen.scss */
 .text article {
   margin: 0 0 30px 0;
