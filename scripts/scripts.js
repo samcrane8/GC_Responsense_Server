@@ -34,26 +34,34 @@ $(document).ready(function() {
 	});
 
 	$('#nb-map').on('click', function(){
-		makeContentInvisible();
+		triggerButtonAnimation();
 		$('.text.content.map').css('display','block');
 	});
 	$('#nb-about').on('click', function(){
-		makeContentInvisible();
+		triggerButtonAnimation();
 		$('.text.content.about').css('display','block');
 	});
 	$('#nb-contact').on('click', function(){
-		makeContentInvisible();
+		triggerButtonAnimation();
 		$('.text.content.contact').css('display','block');
 	});
 	$('#nb-team').on('click', function(){
-		makeContentInvisible();
+		triggerButtonAnimation();
 		$('.text.content.team').css('display','block');
 	});
 	$('#nb-blog').on('click', function(){
-		makeContentInvisible();
+		triggerButtonAnimation();
 		$('.text.content.blog').css('display','block');
 	});
 });
+
+function triggerButtonAnimation(){
+	makeContentInvisible();
+		$('.text').toggleClass('side');
+		setTimeout(function() { 
+	        $('.text').toggleClass('side');
+	    }, 150);
+}
 
 function makeContentInvisible(){
 	for (i = 0; i < buttons.length; i++){
