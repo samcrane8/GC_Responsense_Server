@@ -32,6 +32,7 @@ $(document).ready(function() {
 		$('.text.content.blog').css('display','block');
 		transition_views();
 	});
+	//yeah
 
 	$('#nb-map').on('click', function(){
 		triggerButtonAnimation();
