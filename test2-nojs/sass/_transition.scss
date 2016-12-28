@@ -99,15 +99,33 @@ $wait2: 0.9s;
 
 .tab-switch {
   + .content {
+    display: none;
     // visibility: hidden;
-    margin-top: 90px;
     opacity: 0;
   }
   &:target {
     + .content {
-      margin-top: 60px;
+      display: block;
+      margin-top: 70px;
       // visibility: visible;
+      // opacity: 1;
+      animation: grow 0.8s ease;
       opacity: 1;
     }
+  }
+}
+@keyframes grow {
+  0% {
+    margin-top: 100px;
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 70px;
   }
 }

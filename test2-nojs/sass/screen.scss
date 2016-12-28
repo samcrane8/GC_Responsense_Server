@@ -8,6 +8,9 @@
 @import "_transition";
 
 $black: #000;
+$primary: #000;
+$secondary: #e2123d;
+$tertiary: #777;
 
 @font-face {
     font-family: 'league_gothicregular';
@@ -23,19 +26,56 @@ $black: #000;
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'chivoitalic';
+    src: url('../resources/chivo/chivo-italic-webfont.woff2') format('woff2'),
+         url('../resources/chivo/chivo-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+html {
+    overflow-y:scroll;
+}
 body {
 	font-family: "league_gothicregular";
   font-size: 20pt;
   .content {
     h1 {
       margin-left: -20px;
+      margin-bottom: 10px;
+      margin-top: 12px;
       text-align: center;
       text-transform: uppercase;
       font-size: 30pt;
+      color: $primary;
+    }
+    h2 {
+      margin-left: -20px;
+      margin-bottom: 10px;
+      font-family: 'chivoitalic';
+      font-size: 14pt;
+      text-align: center;
+      color: $secondary;
+    }
+    h3 {
+      margin-left: -20px;
+      margin-bottom: 10px;
+      font-family: 'chivoitalic';
+      font-size: 14pt;
+      text-align: center;
+      color: $tertiary;
     }
     p {
       font-family: 'chivoregular';
       font-size: 12pt;
+      line-height: 1.5;
+    }
+    hr {
+      margin-bottom: 6px;
+    }
+    .date {
+      font-family: 'chivoregular';
+      font-size: 10pt;
     }
   }
 }
@@ -137,7 +177,6 @@ nav {
 
 #nav-buttons-top {
     // background: #f00;
-    background: #fff;
     overflow: hidden;
     height: 44px;
     width: 100%;
@@ -196,9 +235,11 @@ nav {
   left: 50%;
   padding-left: 20px;
   position: absolute;
-  width: 960px;
+  margin-top: 100px;
+  width: 640px;
 
   @include transform(translate(-50%, 0));
-  @include transition(visibility 0s);
-  @include transition(opacity 0.8s ease, margin 0.8s ease);
+  animation-delay: 0.2s;
+  // @include transition(visibility 0s linear 1s);
+  // @include transition(opacity 0.8s ease 0.2s, margin 0.8s ease 0.2s);
 } 
