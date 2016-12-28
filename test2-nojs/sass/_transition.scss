@@ -99,14 +99,14 @@ $wait2: 0.9s;
 
 .tab-switch {
   + .content {
-    visibility: hidden;
+    // visibility: hidden;
     margin-top: 90px;
     opacity: 0;
   }
   &:target {
     + .content {
       margin-top: 60px;
-      visibility: visible;
+      // visibility: visible;
       opacity: 1;
     }
   }

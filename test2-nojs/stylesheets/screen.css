@@ -248,14 +248,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 101, ../sass/_transition.scss */
 .tab-switch + .content {
-  visibility: hidden;
   margin-top: 90px;
   opacity: 0;
 }
 /* line 107, ../sass/_transition.scss */
 .tab-switch:target + .content {
   margin-top: 60px;
-  visibility: visible;
   opacity: 1;
 }
 
@@ -302,6 +300,7 @@ nav {
 }
 /* line 49, ../sass/screen.scss */
 nav #main-logo {
+  background: #fff;
   height: 400px;
   max-height: 400px;
   overflow: hidden;
