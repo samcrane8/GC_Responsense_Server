@@ -7,6 +7,7 @@
 @import "compass/css3";
 @import "transition";
 @import "profile-pics";
+@import "contact";
 
 $black: #000;
 $primary: #000;
@@ -134,15 +135,17 @@ nav {
     background: $black;
     // width: 60px;
     position: absolute;
-    left: 0;
-    max-width: 0;
-    padding: 14px 0;
+    // right: 0;
+    height: 0px;
+
     overflow: hidden;
+    z-index: 10;
     @include transform(translate(-100%, 0));
-    @include transition(all 0.7s cubic-bezier(.48,.08,.2,.99));
+    @include transition(height 0.7s cubic-bezier(.48,.08,.2,.99));
     img {
       display: block;
       width: 60px;
+      margin: 14px;
     }
   }
   #nav-buttons {

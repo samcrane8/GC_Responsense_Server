@@ -73,15 +73,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /* line 9, ../sass/_transition.scss */
 .tab-switch:target ~ nav #side-logo {
-  padding: 14px;
-  max-width: 60px;
-  -moz-transition: all 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99) 1s;
-  -o-transition: all 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99) 1s;
-  -webkit-transition: all 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  height: 96px;
+  -moz-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99) 1s;
+  -o-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99) 1s;
+  -webkit-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
   -webkit-transition-delay: 1s;
-  transition: all 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99) 1s;
+  transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99) 1s;
 }
-/* line 14, ../sass/_transition.scss */
+/* line 13, ../sass/_transition.scss */
 .tab-switch:target ~ nav #main-logo {
   max-height: 44px;
   -moz-transition: all 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.25s;
@@ -90,7 +89,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition-delay: 0.25s;
   transition: all 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.25s;
 }
-/* line 17, ../sass/_transition.scss */
+/* line 16, ../sass/_transition.scss */
 .tab-switch:target ~ nav #main-logo img {
   bottom: -356px;
   -moz-transition: all 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.25s;
@@ -99,7 +98,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition-delay: 0.25s;
   transition: all 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.25s;
 }
-/* line 23, ../sass/_transition.scss */
+/* line 22, ../sass/_transition.scss */
 .tab-switch:target ~ nav #nav-buttons .button-nav {
   margin-top: -44px;
   -moz-transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
@@ -107,35 +106,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
   transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
 }
-/* line 26, ../sass/_transition.scss */
+/* line 25, ../sass/_transition.scss */
 .tab-switch:target ~ nav #nav-buttons .button-nav#nav-about {
   -moz-transition-delay: 0.1s;
   -o-transition-delay: 0.1s;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
-/* line 29, ../sass/_transition.scss */
+/* line 28, ../sass/_transition.scss */
 .tab-switch:target ~ nav #nav-buttons .button-nav#nav-map {
   -moz-transition-delay: 0.2s;
   -o-transition-delay: 0.2s;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
-/* line 32, ../sass/_transition.scss */
+/* line 31, ../sass/_transition.scss */
 .tab-switch:target ~ nav #nav-buttons .button-nav#nav-blog {
   -moz-transition-delay: 0.3s;
   -o-transition-delay: 0.3s;
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 35, ../sass/_transition.scss */
+/* line 34, ../sass/_transition.scss */
 .tab-switch:target ~ nav #nav-buttons .button-nav#nav-contact {
   -moz-transition-delay: 0.4s;
   -o-transition-delay: 0.4s;
   -webkit-transition-delay: 0.4s;
   transition-delay: 0.4s;
 }
-/* line 41, ../sass/_transition.scss */
+/* line 40, ../sass/_transition.scss */
 .tab-switch:target ~ nav #nav-buttons-top .button-nav {
   margin-top: 0;
   -moz-transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98) 0.9s;
@@ -144,28 +143,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition-delay: 0.9s;
   transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98) 0.9s;
 }
-/* line 44, ../sass/_transition.scss */
+/* line 43, ../sass/_transition.scss */
 .tab-switch:target ~ nav #nav-buttons-top .button-nav#nav-about {
   -moz-transition-delay: 1s;
   -o-transition-delay: 1s;
   -webkit-transition-delay: 1s;
   transition-delay: 1s;
 }
-/* line 47, ../sass/_transition.scss */
+/* line 46, ../sass/_transition.scss */
 .tab-switch:target ~ nav #nav-buttons-top .button-nav#nav-map {
   -moz-transition-delay: 1.1s;
   -o-transition-delay: 1.1s;
   -webkit-transition-delay: 1.1s;
   transition-delay: 1.1s;
 }
-/* line 50, ../sass/_transition.scss */
+/* line 49, ../sass/_transition.scss */
 .tab-switch:target ~ nav #nav-buttons-top .button-nav#nav-blog {
   -moz-transition-delay: 1.2s;
   -o-transition-delay: 1.2s;
   -webkit-transition-delay: 1.2s;
   transition-delay: 1.2s;
 }
-/* line 53, ../sass/_transition.scss */
+/* line 52, ../sass/_transition.scss */
 .tab-switch:target ~ nav #nav-buttons-top .button-nav#nav-contact {
   -moz-transition-delay: 1.3s;
   -o-transition-delay: 1.3s;
@@ -173,7 +172,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition-delay: 1.3s;
 }
 
-/* line 65, ../sass/_transition.scss */
+/* line 64, ../sass/_transition.scss */
 #nav-buttons .button-nav {
   -moz-transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98) 0.6s;
   -o-transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98) 0.6s;
@@ -181,28 +180,28 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transition-delay: 0.6s;
   transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98) 0.6s;
 }
-/* line 67, ../sass/_transition.scss */
+/* line 66, ../sass/_transition.scss */
 #nav-buttons .button-nav#nav-about {
   -moz-transition-delay: 0.7s;
   -o-transition-delay: 0.7s;
   -webkit-transition-delay: 0.7s;
   transition-delay: 0.7s;
 }
-/* line 70, ../sass/_transition.scss */
+/* line 69, ../sass/_transition.scss */
 #nav-buttons .button-nav#nav-map {
   -moz-transition-delay: 0.8s;
   -o-transition-delay: 0.8s;
   -webkit-transition-delay: 0.8s;
   transition-delay: 0.8s;
 }
-/* line 73, ../sass/_transition.scss */
+/* line 72, ../sass/_transition.scss */
 #nav-buttons .button-nav#nav-blog {
   -moz-transition-delay: 0.9s;
   -o-transition-delay: 0.9s;
   -webkit-transition-delay: 0.9s;
   transition-delay: 0.9s;
 }
-/* line 76, ../sass/_transition.scss */
+/* line 75, ../sass/_transition.scss */
 #nav-buttons .button-nav#nav-contact {
   -moz-transition-delay: 1s;
   -o-transition-delay: 1s;
@@ -210,35 +209,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition-delay: 1s;
 }
 
-/* line 83, ../sass/_transition.scss */
+/* line 82, ../sass/_transition.scss */
 #nav-buttons-top .button-nav {
   -moz-transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
   -o-transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
   -webkit-transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
   transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
 }
-/* line 85, ../sass/_transition.scss */
+/* line 84, ../sass/_transition.scss */
 #nav-buttons-top .button-nav#nav-about {
   -moz-transition-delay: 0.1s;
   -o-transition-delay: 0.1s;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
 }
-/* line 88, ../sass/_transition.scss */
+/* line 87, ../sass/_transition.scss */
 #nav-buttons-top .button-nav#nav-map {
   -moz-transition-delay: 0.2s;
   -o-transition-delay: 0.2s;
   -webkit-transition-delay: 0.2s;
   transition-delay: 0.2s;
 }
-/* line 91, ../sass/_transition.scss */
+/* line 90, ../sass/_transition.scss */
 #nav-buttons-top .button-nav#nav-blog {
   -moz-transition-delay: 0.3s;
   -o-transition-delay: 0.3s;
   -webkit-transition-delay: 0.3s;
   transition-delay: 0.3s;
 }
-/* line 94, ../sass/_transition.scss */
+/* line 93, ../sass/_transition.scss */
 #nav-buttons-top .button-nav#nav-contact {
   -moz-transition-delay: 0.4s;
   -o-transition-delay: 0.4s;
@@ -246,12 +245,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition-delay: 0.4s;
 }
 
-/* line 101, ../sass/_transition.scss */
+/* line 100, ../sass/_transition.scss */
 .tab-switch + .content {
   display: none;
   opacity: 0;
 }
-/* line 107, ../sass/_transition.scss */
+/* line 106, ../sass/_transition.scss */
 .tab-switch:target + .content {
   display: block;
   margin-top: 70px;
@@ -309,7 +308,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: 'chivoregular';
   font-size: 14pt;
   text-align: center;
-  z-index: 10;
   position: absolute;
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
@@ -322,8 +320,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 37, ../sass/_profile-pics.scss */
 .profile-pic:after:hover {
   cursor: pointer;
+  background: #000;
 }
-/* line 42, ../sass/_profile-pics.scss */
+/* line 43, ../sass/_profile-pics.scss */
 .profile-pic img {
   width: 100%;
   margin-bottom: 25px;
@@ -331,15 +330,35 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 48, ../sass/_profile-pics.scss */
+/* line 49, ../sass/_profile-pics.scss */
 .profile-pic .details {
   width: 100%;
 }
-/* line 54, ../sass/_profile-pics.scss */
+/* line 55, ../sass/_profile-pics.scss */
 .profile-pic .basic {
   line-height: 1.3;
   width: 100%;
   height: 90px;
+}
+
+/* line 1, ../sass/_contact.scss */
+#contact-cols {
+  margin-top: 20px;
+}
+/* line 3, ../sass/_contact.scss */
+#contact-cols .contact-column {
+  width: calc(100% / 3);
+  float: left;
+}
+/* line 7, ../sass/_contact.scss */
+#contact-cols .contact-column img {
+  display: block;
+  width: 50%;
+  margin: 0 auto 10px auto;
+}
+/* line 12, ../sass/_contact.scss */
+#contact-cols .contact-column p {
+  text-align: center;
 }
 
 @font-face {
@@ -366,17 +385,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-weight: normal;
   font-style: normal;
 }
-/* line 44, ../sass/screen.scss */
+/* line 45, ../sass/screen.scss */
 html {
   overflow-y: scroll;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 body {
   font-family: "league_gothicregular";
   font-size: 20pt;
 }
-/* line 51, ../sass/screen.scss */
+/* line 52, ../sass/screen.scss */
 body .content h1 {
   margin-left: -20px;
   margin-bottom: 10px;
@@ -386,7 +405,7 @@ body .content h1 {
   font-size: 30pt;
   color: #000;
 }
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 body .content h2 {
   margin-left: -20px;
   margin-bottom: 10px;
@@ -395,7 +414,7 @@ body .content h2 {
   text-align: center;
   color: #ef121d;
 }
-/* line 68, ../sass/screen.scss */
+/* line 69, ../sass/screen.scss */
 body .content h3 {
   margin-left: -20px;
   margin-bottom: 10px;
@@ -404,37 +423,37 @@ body .content h3 {
   text-align: center;
   color: #777;
 }
-/* line 76, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 body .content h4 {
   font-family: 'chivoregular';
   font-size: 14pt;
   text-align: center;
   color: #000;
 }
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 body .content h5 {
   font-family: 'chivoitalic';
   font-size: 14pt;
   text-align: center;
   color: #ef121d;
 }
-/* line 90, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 body .content p {
   font-family: 'chivoregular';
   font-size: 12pt;
   line-height: 1.5;
 }
-/* line 95, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 body .content hr {
   margin-bottom: 6px;
 }
-/* line 98, ../sass/screen.scss */
+/* line 99, ../sass/screen.scss */
 body .content .date {
   font-family: 'chivoregular';
   font-size: 10pt;
 }
 
-/* line 104, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 nav {
   left: 50%;
   position: fixed;
@@ -445,7 +464,7 @@ nav {
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
 }
-/* line 111, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 nav #main-logo {
   background: #fff;
   height: 400px;
@@ -459,7 +478,7 @@ nav #main-logo {
   -webkit-transition-delay: 0.5s;
   transition: all 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.5s;
 }
-/* line 119, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 nav #main-logo img {
   bottom: 0;
   left: 50%;
@@ -478,36 +497,36 @@ nav #main-logo img {
   -webkit-transition-delay: 0.5s;
   transition: all 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.5s;
 }
-/* line 133, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 nav #side-logo {
   background: #000;
   position: absolute;
-  left: 0;
-  max-width: 0;
-  padding: 14px 0;
+  height: 0px;
   overflow: hidden;
+  z-index: 10;
   -moz-transform: translate(-100%, 0);
   -ms-transform: translate(-100%, 0);
   -webkit-transform: translate(-100%, 0);
   transform: translate(-100%, 0);
-  -moz-transition: all 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
-  -o-transition: all 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
-  -webkit-transition: all 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
-  transition: all 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  -moz-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  -o-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  -webkit-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
 }
-/* line 143, ../sass/screen.scss */
+/* line 145, ../sass/screen.scss */
 nav #side-logo img {
   display: block;
   width: 60px;
+  margin: 14px;
 }
-/* line 148, ../sass/screen.scss */
+/* line 151, ../sass/screen.scss */
 nav #nav-buttons {
   border-top: #000 solid 3px;
   overflow: hidden;
   height: 44px;
   width: 100%;
 }
-/* line 154, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 nav #nav-buttons .button-nav {
   padding-top: 8px;
   float: left;
@@ -516,7 +535,7 @@ nav #nav-buttons .button-nav {
   height: 100%;
   width: 20%;
 }
-/* line 163, ../sass/screen.scss */
+/* line 166, ../sass/screen.scss */
 nav #nav-buttons .button-nav p {
   color: #000;
   display: block;
@@ -525,7 +544,7 @@ nav #nav-buttons .button-nav p {
   height: 100%;
   width: 100%;
 }
-/* line 172, ../sass/screen.scss */
+/* line 175, ../sass/screen.scss */
 nav #nav-buttons .button-nav .button-hover {
   background: #000;
   color: #fff;
@@ -541,19 +560,19 @@ nav #nav-buttons .button-nav .button-hover {
   -webkit-transition: all 0.35s cubic-bezier(0.32, 0.53, 0.35, 0.98);
   transition: all 0.35s cubic-bezier(0.32, 0.53, 0.35, 0.98);
 }
-/* line 184, ../sass/screen.scss */
+/* line 187, ../sass/screen.scss */
 nav #nav-buttons .button-nav .button-hover div {
   padding-top: 8px;
   position: absolute;
   left: 50%;
   transform: translate(-50%, 0);
 }
-/* line 192, ../sass/screen.scss */
+/* line 195, ../sass/screen.scss */
 nav #nav-buttons .button-nav:hover .button-hover {
   height: 100%;
 }
 
-/* line 200, ../sass/screen.scss */
+/* line 203, ../sass/screen.scss */
 #nav-buttons-top {
   overflow: hidden;
   height: 44px;
@@ -561,7 +580,7 @@ nav #nav-buttons .button-nav:hover .button-hover {
   position: absolute;
   top: 0;
 }
-/* line 207, ../sass/screen.scss */
+/* line 210, ../sass/screen.scss */
 #nav-buttons-top .button-nav {
   padding-top: 12px;
   margin-top: 44px;
@@ -571,7 +590,7 @@ nav #nav-buttons .button-nav:hover .button-hover {
   height: 100%;
   width: 20%;
 }
-/* line 216, ../sass/screen.scss */
+/* line 219, ../sass/screen.scss */
 #nav-buttons-top .button-nav p {
   color: #000;
   display: block;
@@ -580,7 +599,7 @@ nav #nav-buttons .button-nav:hover .button-hover {
   height: 100%;
   width: 100%;
 }
-/* line 225, ../sass/screen.scss */
+/* line 228, ../sass/screen.scss */
 #nav-buttons-top .button-nav .button-hover {
   background: #000;
   color: #fff;
@@ -596,7 +615,7 @@ nav #nav-buttons .button-nav:hover .button-hover {
   -webkit-transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
   transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
 }
-/* line 236, ../sass/screen.scss */
+/* line 239, ../sass/screen.scss */
 #nav-buttons-top .button-nav .button-hover div {
   margin-top: -33px;
   position: absolute;
@@ -607,16 +626,16 @@ nav #nav-buttons .button-nav:hover .button-hover {
   -webkit-transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
   transition: all 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
 }
-/* line 245, ../sass/screen.scss */
+/* line 248, ../sass/screen.scss */
 #nav-buttons-top .button-nav:hover .button-hover {
   top: -56px;
 }
-/* line 247, ../sass/screen.scss */
+/* line 250, ../sass/screen.scss */
 #nav-buttons-top .button-nav:hover .button-hover div {
   margin-top: 12px;
 }
 
-/* line 255, ../sass/screen.scss */
+/* line 258, ../sass/screen.scss */
 .content {
   left: 50%;
   padding-left: 20px;

@@ -1,0 +1,16 @@
+#contact-cols {
+  margin-top: 20px;
+  .contact-column {
+    width: calc(100% / 3);
+    float: left;
+    // background: #1a3;
+    img {
+      display: block;
+      width: 50%;
+      margin: 0 auto 10px auto;
+    }
+    p {
+      text-align: center;
+    }
+  }
+}

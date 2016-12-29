@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:none;stroke:#010101;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st2{display:inline;fill:none;stroke:#010101;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{display:inline;}
+	.st4{font-family:'Chivo-Light';}
+	.st5{font-size:37.4045px;}
+	.st6{fill:#010101;}
+	.st7{display:inline;fill:#010101;}
+	.st8{display:inline;fill:#FFFFFF;}
+</style>
+<g id="Layer_1_1_" class="st0">
+	<rect x="31" y="39" class="st1" width="39" height="23"/>
+	<polyline class="st1" points="31,39 50,53 70,39 	"/>
+	<line class="st2" x1="53.6" y1="50.5" x2="70" y2="62"/>
+	<line class="st2" x1="31" y1="62" x2="46.6" y2="50.5"/>
+</g>
+<g id="Layer_2" class="st0">
+	<text transform="matrix(1 0 0 1 33.4507 62.0352)" class="st3 st4 st5">@</text>
+</g>
+<g id="Layer_3">
+	<g>
+		<path class="st6" d="M72.6,99.7c-6.3,0-12.2-2.4-16.6-6.9l-48.8-48C2.6,40.4,0,34.4,0,28.1c0-6.3,2.4-12.3,7-16.8l8.3-8.5
+			c2.8-2.8,7.5-2.9,10.6-0.1l11.3,11c2.8,2.8,2.9,7.5,0.1,10.6l-1.9,1.9c-3.4,3.6-3.3,9.6,0.3,13.2L61,64.5
+			c3.7,3.5,9.6,3.4,13.2-0.2l1.8-1.8c2.8-2.8,7.4-2.8,10.6-0.1l11.3,11c2.8,2.8,2.9,7.5,0.1,10.6l-8.4,8.7
+			c-4.4,4.6-10.4,7.1-16.8,7.2C72.8,99.7,72.7,99.7,72.6,99.7z M20.5,5.8c-0.6,0-1.2,0.2-1.6,0.6L10.7,15c-3.6,3.6-5.5,8.2-5.5,13.1
+			c0,4.9,2.1,9.5,5.7,13.1c0,0,0,0,0,0l48.8,48c3.5,3.5,8.1,5.4,12.9,5.4c0.1,0,0.1,0,0.1,0c5,0,9.6-2,13.1-5.6l8.3-8.6
+			c0.8-0.9,0.9-2.5,0-3.4L83.1,66.2c-0.9-0.8-2.5-0.9-3.4,0L77.9,68c-5.6,5.6-14.8,5.7-20.5,0.3L31.9,43c-5.6-5.6-5.7-14.8-0.3-20.5
+			l1.9-1.9c0.8-0.9,0.8-2.5,0-3.3L22.3,6.5C21.8,6,21.2,5.8,20.5,5.8z"/>
+	</g>
+</g>
+<g id="Layer_4" class="st0">
+	<path class="st7" d="M44.7,48.8c0.5,4.7,5.8,10,5.8,10s5.3-5.3,5.8-10c0-0.2,0.1-0.5,0.1-0.7c0-3.2-2.6-5.8-5.8-5.8
+		s-5.8,2.6-5.8,5.8C44.6,48.3,44.6,48.6,44.7,48.8z"/>
+	<circle class="st8" cx="50.5" cy="48.1" r="2"/>
+	<g class="st3">
+		<path class="st6" d="M40.7,30.5v8.2c0,1.4-1.2,2.6-2.6,2.6h-6.8v2h6.8c2.5,0,4.5-2,4.5-4.6v-8.2H40.7z"/>
+		<path class="st6" d="M45.8,48.3c-0.2,0.5-0.3,0.9-0.3,1.4V52H31.3v1.9h7.5v4.3c0,1.4-1.1,2.5-2.5,2.5h-5v2h5c2.4,0,4.4-2,4.4-4.4
+			V54h4.9v15.4h2V53.9h2.2C46.8,53.5,45.5,50.8,45.8,48.3z"/>
+		<path class="st6" d="M51.5,53.9H70V52H54.6C53.9,53,52.9,53.7,51.5,53.9z"/>
+		<path class="st6" d="M60.2,36.4v-5.9h-2v12.1c0,1.4-1.2,2.6-2.6,2.6h-1.8c0.6,0.5,1,1.2,1.3,2h0.5c2.5,0,4.6-2,4.6-4.6v-4.2H70v-2
+			H60.2z"/>
+		<path class="st6" d="M53.4,69.3v-4c0-0.9,0.7-1.6,1.6-1.6h6.6c0.9,0,1.6,0.7,1.6,1.6v4h2v-4c0-1.9-1.6-3.5-3.5-3.5H55
+			c-1.9,0-3.5,1.6-3.5,3.5v4H53.4z"/>
+	</g>
+	<rect x="31" y="30.5" class="st1" width="39" height="39"/>
+</g>
+</svg>

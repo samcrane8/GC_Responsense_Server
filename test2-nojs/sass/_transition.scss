@@ -7,9 +7,8 @@ $wait2: 0.9s;
     ~ nav {
       // margin-top: 0;
       #side-logo {
-        padding: 14px;
-        max-width: 60px;
-        @include transition(all 0.7s cubic-bezier(.48,.08,.2,.99) 1s);
+        height: 96px;
+        @include transition(height 0.7s cubic-bezier(.48,.08,.2,.99) 1s);
       }
       #main-logo {
         max-height: 44px;

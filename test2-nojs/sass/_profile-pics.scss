@@ -30,12 +30,13 @@
     font-family: 'chivoregular';
     font-size: 14pt;
     text-align: center;
-    z-index: 10;
+    // z-index: 10;
     position: absolute;
     @include border-radius(50%);
     @include transform(translate(-50%,-50%));
     &:hover {
       cursor: pointer;
+      background: #000;
     }
   }
   // @include box-shadow(3px 3px 7px #bbb);
