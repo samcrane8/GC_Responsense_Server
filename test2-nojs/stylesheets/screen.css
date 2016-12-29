@@ -343,7 +343,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../sass/_contact.scss */
 #contact-cols {
-  margin-top: 20px;
+  margin-top: 30px;
 }
 /* line 3, ../sass/_contact.scss */
 #contact-cols .contact-column {
@@ -353,7 +353,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /* line 7, ../sass/_contact.scss */
 #contact-cols .contact-column img {
   display: block;
-  width: 50%;
+  width: 20%;
   margin: 0 auto 10px auto;
 }
 /* line 12, ../sass/_contact.scss */
