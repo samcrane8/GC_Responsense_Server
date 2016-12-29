@@ -1,4 +1,9 @@
 #content-team {
+  #team-blurb {
+    padding: 10px 0;
+    border-top: 2px solid #222;
+    border-bottom: 2px solid #222;
+  }
   .profile-column {
     float: left;
     width: calc(100% / 3);

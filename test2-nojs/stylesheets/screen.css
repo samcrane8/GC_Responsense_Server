@@ -275,13 +275,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   }
 }
 /* line 2, ../sass/_profile-pics.scss */
+#content-team #team-blurb {
+  padding: 10px 0;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+/* line 7, ../sass/_profile-pics.scss */
 #content-team .profile-column {
   float: left;
   width: calc(100% / 3);
   height: 500px;
 }
 
-/* line 8, ../sass/_profile-pics.scss */
+/* line 13, ../sass/_profile-pics.scss */
 .profile-pic {
   margin: 0;
   padding: 0;
@@ -290,7 +296,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   line-height: 0;
   position: relative;
 }
-/* line 16, ../sass/_profile-pics.scss */
+/* line 21, ../sass/_profile-pics.scss */
 .profile-pic:after {
   color: #fff;
   top: 192px;
@@ -313,11 +319,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-/* line 32, ../sass/_profile-pics.scss */
+/* line 37, ../sass/_profile-pics.scss */
 .profile-pic:after:hover {
   cursor: pointer;
 }
-/* line 37, ../sass/_profile-pics.scss */
+/* line 42, ../sass/_profile-pics.scss */
 .profile-pic img {
   width: 100%;
   margin-bottom: 25px;
@@ -325,11 +331,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-/* line 43, ../sass/_profile-pics.scss */
+/* line 48, ../sass/_profile-pics.scss */
 .profile-pic .details {
   width: 100%;
 }
-/* line 49, ../sass/_profile-pics.scss */
+/* line 54, ../sass/_profile-pics.scss */
 .profile-pic .basic {
   line-height: 1.3;
   width: 100%;
