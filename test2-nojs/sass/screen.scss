@@ -5,11 +5,12 @@
 
 @import "compass/reset";
 @import "compass/css3";
-@import "_transition";
+@import "transition";
+@import "profile-pics";
 
 $black: #000;
 $primary: #000;
-$secondary: #e2123d;
+$secondary: #ef121d;
 $tertiary: #777;
 
 @font-face {
@@ -30,6 +31,13 @@ $tertiary: #777;
     font-family: 'chivoitalic';
     src: url('../resources/chivo/chivo-italic-webfont.woff2') format('woff2'),
          url('../resources/chivo/chivo-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'chivobold';
+    src: url('../resources/chivo/chivo-bold-webfont.woff2') format('woff2'),
+         url('../resources/chivo/chivo-bold-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -64,6 +72,20 @@ body {
       font-size: 14pt;
       text-align: center;
       color: $tertiary;
+    }
+    h4 {
+      // margin-bottom: 10px;
+      font-family: 'chivoregular';
+      font-size: 14pt;
+      text-align: center;
+      color: $primary;
+    }
+    h5 {
+      // margin-bottom: 10px;
+      font-family: 'chivoitalic';
+      font-size: 14pt;
+      text-align: center;
+      color: $secondary;
     }
     p {
       font-family: 'chivoregular';
