@@ -1,0 +1,658 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, C:/Ruby23-x64/lib/ruby/gems/2.3.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 4, ../sass/_transition.scss */
+.tab-switch {
+  position: fixed;
+}
+/* line 8, ../sass/_transition.scss */
+.tab-switch:target ~ nav #side-logo {
+  height: 96px;
+  -moz-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99) 1s;
+  -o-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99) 1s;
+  -webkit-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  -webkit-transition-delay: 1s;
+  transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99) 1s;
+}
+/* line 12, ../sass/_transition.scss */
+.tab-switch:target ~ nav #main-logo {
+  max-height: 44px;
+  -moz-transition: max-height 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.25s;
+  -o-transition: max-height 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.25s;
+  -webkit-transition: max-height 1s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  -webkit-transition-delay: 0.25s;
+  transition: max-height 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.25s;
+}
+/* line 15, ../sass/_transition.scss */
+.tab-switch:target ~ nav #main-logo img {
+  bottom: -356px;
+  -moz-transition: bottom 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.25s;
+  -o-transition: bottom 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.25s;
+  -webkit-transition: bottom 1s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  -webkit-transition-delay: 0.25s;
+  transition: bottom 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.25s;
+}
+/* line 21, ../sass/_transition.scss */
+.tab-switch:target ~ nav #nav-buttons .button-nav {
+  margin-top: -44px;
+  -moz-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -o-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -webkit-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+}
+/* line 24, ../sass/_transition.scss */
+.tab-switch:target ~ nav #nav-buttons .button-nav#nav-about {
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+/* line 27, ../sass/_transition.scss */
+.tab-switch:target ~ nav #nav-buttons .button-nav#nav-map {
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+/* line 30, ../sass/_transition.scss */
+.tab-switch:target ~ nav #nav-buttons .button-nav#nav-blog {
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+/* line 33, ../sass/_transition.scss */
+.tab-switch:target ~ nav #nav-buttons .button-nav#nav-contact {
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+/* line 39, ../sass/_transition.scss */
+.tab-switch:target ~ nav #nav-buttons-top .button-nav {
+  margin-top: 0;
+  -moz-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98) 0.9s;
+  -o-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98) 0.9s;
+  -webkit-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -webkit-transition-delay: 0.9s;
+  transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98) 0.9s;
+}
+/* line 42, ../sass/_transition.scss */
+.tab-switch:target ~ nav #nav-buttons-top .button-nav#nav-about {
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+/* line 45, ../sass/_transition.scss */
+.tab-switch:target ~ nav #nav-buttons-top .button-nav#nav-map {
+  -moz-transition-delay: 1.1s;
+  -o-transition-delay: 1.1s;
+  -webkit-transition-delay: 1.1s;
+  transition-delay: 1.1s;
+}
+/* line 48, ../sass/_transition.scss */
+.tab-switch:target ~ nav #nav-buttons-top .button-nav#nav-blog {
+  -moz-transition-delay: 1.2s;
+  -o-transition-delay: 1.2s;
+  -webkit-transition-delay: 1.2s;
+  transition-delay: 1.2s;
+}
+/* line 51, ../sass/_transition.scss */
+.tab-switch:target ~ nav #nav-buttons-top .button-nav#nav-contact {
+  -moz-transition-delay: 1.3s;
+  -o-transition-delay: 1.3s;
+  -webkit-transition-delay: 1.3s;
+  transition-delay: 1.3s;
+}
+
+/* line 61, ../sass/_transition.scss */
+#nav-buttons .button-nav {
+  -moz-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98) 0.6s;
+  -o-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98) 0.6s;
+  -webkit-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -webkit-transition-delay: 0.6s;
+  transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98) 0.6s;
+}
+/* line 63, ../sass/_transition.scss */
+#nav-buttons .button-nav#nav-about {
+  -moz-transition-delay: 0.7s;
+  -o-transition-delay: 0.7s;
+  -webkit-transition-delay: 0.7s;
+  transition-delay: 0.7s;
+}
+/* line 66, ../sass/_transition.scss */
+#nav-buttons .button-nav#nav-map {
+  -moz-transition-delay: 0.8s;
+  -o-transition-delay: 0.8s;
+  -webkit-transition-delay: 0.8s;
+  transition-delay: 0.8s;
+}
+/* line 69, ../sass/_transition.scss */
+#nav-buttons .button-nav#nav-blog {
+  -moz-transition-delay: 0.9s;
+  -o-transition-delay: 0.9s;
+  -webkit-transition-delay: 0.9s;
+  transition-delay: 0.9s;
+}
+/* line 72, ../sass/_transition.scss */
+#nav-buttons .button-nav#nav-contact {
+  -moz-transition-delay: 1s;
+  -o-transition-delay: 1s;
+  -webkit-transition-delay: 1s;
+  transition-delay: 1s;
+}
+
+/* line 79, ../sass/_transition.scss */
+#nav-buttons-top .button-nav {
+  -moz-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -o-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -webkit-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+}
+/* line 81, ../sass/_transition.scss */
+#nav-buttons-top .button-nav#nav-about {
+  -moz-transition-delay: 0.1s;
+  -o-transition-delay: 0.1s;
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+/* line 84, ../sass/_transition.scss */
+#nav-buttons-top .button-nav#nav-map {
+  -moz-transition-delay: 0.2s;
+  -o-transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+/* line 87, ../sass/_transition.scss */
+#nav-buttons-top .button-nav#nav-blog {
+  -moz-transition-delay: 0.3s;
+  -o-transition-delay: 0.3s;
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+/* line 90, ../sass/_transition.scss */
+#nav-buttons-top .button-nav#nav-contact {
+  -moz-transition-delay: 0.4s;
+  -o-transition-delay: 0.4s;
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+
+/* line 97, ../sass/_transition.scss */
+.tab-switch + .content {
+  display: none;
+  opacity: 0;
+}
+/* line 102, ../sass/_transition.scss */
+.tab-switch:target + .content {
+  display: block;
+  margin-top: 70px;
+  animation: grow 0.8s ease;
+  opacity: 1;
+}
+
+@keyframes grow {
+  0% {
+    margin-top: 100px;
+    display: none;
+    opacity: 0;
+  }
+  1% {
+    display: block;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 70px;
+  }
+}
+/* line 2, ../sass/_profile-pics.scss */
+#content-team #team-blurb {
+  padding: 10px 0;
+  border-top: 2px solid #222;
+  border-bottom: 2px solid #222;
+}
+/* line 7, ../sass/_profile-pics.scss */
+#content-team .profile-column {
+  float: left;
+  width: calc(100% / 3);
+  height: 500px;
+}
+
+/* line 13, ../sass/_profile-pics.scss */
+.profile-pic {
+  margin: 0;
+  padding: 0;
+  width: 90%;
+  margin: 20px auto;
+  line-height: 0;
+  position: relative;
+}
+/* line 21, ../sass/_profile-pics.scss */
+.profile-pic:after {
+  color: #fff;
+  top: 192px;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  content: "i";
+  line-height: 30px;
+  background: #ef121d;
+  font-family: 'chivoregular';
+  font-size: 14pt;
+  text-align: center;
+  position: absolute;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 37, ../sass/_profile-pics.scss */
+.profile-pic:after:hover {
+  cursor: pointer;
+  background: #000;
+}
+/* line 43, ../sass/_profile-pics.scss */
+.profile-pic img {
+  width: 100%;
+  margin-bottom: 25px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+/* line 49, ../sass/_profile-pics.scss */
+.profile-pic .details {
+  width: 100%;
+}
+/* line 55, ../sass/_profile-pics.scss */
+.profile-pic .basic {
+  line-height: 1.3;
+  width: 100%;
+  height: 90px;
+}
+
+/* line 1, ../sass/_contact.scss */
+#contact-cols {
+  margin-top: 30px;
+}
+/* line 3, ../sass/_contact.scss */
+#contact-cols .contact-column {
+  width: calc(100% / 3);
+  float: left;
+}
+/* line 7, ../sass/_contact.scss */
+#contact-cols .contact-column img {
+  display: block;
+  width: 20%;
+  margin: 0 auto 10px auto;
+}
+/* line 12, ../sass/_contact.scss */
+#contact-cols .contact-column p {
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'league_gothicregular';
+  src: url("../resources/league-gothic/leaguegothic-regular-webfont.woff2") format("woff2"), url("../resources/league-gothic/leaguegothic-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'chivoregular';
+  src: url("../resources/chivo/chivo-regular-webfont.woff2") format("woff2"), url("../resources/chivo/chivo-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'chivoitalic';
+  src: url("../resources/chivo/chivo-italic-webfont.woff2") format("woff2"), url("../resources/chivo/chivo-italic-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'chivobold';
+  src: url("../resources/chivo/chivo-bold-webfont.woff2") format("woff2"), url("../resources/chivo/chivo-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+/* line 45, ../sass/screen.scss */
+html {
+  overflow-y: scroll;
+}
+
+/* line 48, ../sass/screen.scss */
+.preload * {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -ms-transition: none !important;
+  -o-transition: none !important;
+}
+
+/* line 54, ../sass/screen.scss */
+body {
+  font-family: "league_gothicregular";
+  font-size: 20pt;
+}
+/* line 58, ../sass/screen.scss */
+body .content h1 {
+  margin-left: -20px;
+  margin-bottom: 10px;
+  margin-top: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 30pt;
+  color: #000;
+}
+/* line 67, ../sass/screen.scss */
+body .content h2 {
+  margin-left: -20px;
+  margin-bottom: 10px;
+  font-family: 'chivoitalic';
+  font-size: 14pt;
+  text-align: center;
+  color: #ef121d;
+}
+/* line 75, ../sass/screen.scss */
+body .content h3 {
+  margin-left: -20px;
+  margin-bottom: 10px;
+  font-family: 'chivoitalic';
+  font-size: 14pt;
+  text-align: center;
+  color: #777;
+}
+/* line 83, ../sass/screen.scss */
+body .content h4 {
+  font-family: 'chivoregular';
+  font-size: 14pt;
+  text-align: center;
+  color: #000;
+}
+/* line 90, ../sass/screen.scss */
+body .content h5 {
+  font-family: 'chivoitalic';
+  font-size: 14pt;
+  text-align: center;
+  color: #ef121d;
+}
+/* line 97, ../sass/screen.scss */
+body .content p {
+  font-family: 'chivoregular';
+  font-size: 12pt;
+  line-height: 1.5;
+}
+/* line 102, ../sass/screen.scss */
+body .content hr {
+  margin-bottom: 6px;
+}
+/* line 105, ../sass/screen.scss */
+body .content .date {
+  font-family: 'chivoregular';
+  font-size: 10pt;
+}
+
+/* line 111, ../sass/screen.scss */
+nav {
+  left: 50%;
+  position: fixed;
+  top: 0;
+  width: 960px;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+}
+/* line 118, ../sass/screen.scss */
+nav #main-logo {
+  background: #fff;
+  height: 400px;
+  max-height: 400px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  -moz-transition: max-height 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.5s;
+  -o-transition: max-height 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.5s;
+  -webkit-transition: max-height 1s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  -webkit-transition-delay: 0.5s;
+  transition: max-height 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.5s;
+}
+/* line 126, ../sass/screen.scss */
+nav #main-logo img {
+  bottom: 0;
+  left: 50%;
+  display: block;
+  margin: 0 auto 0 auto;
+  padding-bottom: 14px;
+  position: absolute;
+  height: 200px;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  -moz-transition: bottom 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.5s;
+  -o-transition: bottom 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.5s;
+  -webkit-transition: bottom 1s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  -webkit-transition-delay: 0.5s;
+  transition: bottom 1s cubic-bezier(0.48, 0.08, 0.2, 0.99) 0.5s;
+}
+/* line 140, ../sass/screen.scss */
+nav #side-logo {
+  background: #000;
+  position: absolute;
+  height: 0px;
+  overflow: hidden;
+  z-index: 10;
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -webkit-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+  -moz-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  -o-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  -webkit-transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+  transition: height 0.7s cubic-bezier(0.48, 0.08, 0.2, 0.99);
+}
+/* line 151, ../sass/screen.scss */
+nav #side-logo img {
+  display: block;
+  width: 60px;
+  margin: 14px;
+}
+/* line 157, ../sass/screen.scss */
+nav #nav-buttons {
+  border-top: #000 solid 3px;
+  overflow: hidden;
+  height: 44px;
+  width: 100%;
+}
+/* line 163, ../sass/screen.scss */
+nav #nav-buttons .button-nav {
+  padding-top: 8px;
+  float: left;
+  overflow: hidden;
+  text-decoration: none;
+  height: 100%;
+  width: 20%;
+}
+/* line 171, ../sass/screen.scss */
+nav #nav-buttons .button-nav p {
+  color: #000;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+}
+/* line 180, ../sass/screen.scss */
+nav #nav-buttons .button-nav .button-hover {
+  background: #000;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: calc(-100% - 8px);
+  height: 0px;
+  width: 100%;
+  overflow: hidden;
+  -moz-transition: height 0.35s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -o-transition: height 0.35s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -webkit-transition: height 0.35s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  transition: height 0.35s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+}
+/* line 192, ../sass/screen.scss */
+nav #nav-buttons .button-nav .button-hover div {
+  padding-top: 8px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+/* line 200, ../sass/screen.scss */
+nav #nav-buttons .button-nav:hover .button-hover {
+  height: 100%;
+}
+
+/* line 208, ../sass/screen.scss */
+#nav-buttons-top {
+  overflow: hidden;
+  height: 44px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+/* line 215, ../sass/screen.scss */
+#nav-buttons-top .button-nav {
+  padding-top: 12px;
+  margin-top: 44px;
+  float: left;
+  overflow: hidden;
+  text-decoration: none;
+  height: 100%;
+  width: 20%;
+}
+/* line 224, ../sass/screen.scss */
+#nav-buttons-top .button-nav p {
+  color: #000;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  height: 100%;
+  width: 100%;
+}
+/* line 233, ../sass/screen.scss */
+#nav-buttons-top .button-nav .button-hover {
+  background: #000;
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: -12px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  -moz-transition: top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -o-transition: top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -webkit-transition: top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  transition: top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+}
+/* line 244, ../sass/screen.scss */
+#nav-buttons-top .button-nav .button-hover div {
+  margin-top: -33px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
+  -moz-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -o-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  -webkit-transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+  transition: margin-top 0.5s cubic-bezier(0.32, 0.53, 0.35, 0.98);
+}
+/* line 253, ../sass/screen.scss */
+#nav-buttons-top .button-nav:hover .button-hover {
+  top: -56px;
+}
+/* line 255, ../sass/screen.scss */
+#nav-buttons-top .button-nav:hover .button-hover div {
+  margin-top: 12px;
+}
+
+/* line 263, ../sass/screen.scss */
+.content {
+  left: 50%;
+  padding-left: 20px;
+  position: absolute;
+  margin-top: 100px;
+  width: 640px;
+  -moz-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  animation-delay: 0.2s;
+}
