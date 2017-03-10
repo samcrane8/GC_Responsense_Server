@@ -411,7 +411,7 @@ body .content h1 {
   text-align: center;
   text-transform: uppercase;
   font-size: 30pt;
-  color: #000;
+  color: #ff7f2a;
 }
 /* line 67, ../sass/screen.scss */
 body .content h2 {
@@ -436,7 +436,7 @@ body .content h4 {
   font-family: 'chivoregular';
   font-size: 14pt;
   text-align: center;
-  color: #000;
+  color: #ff7f2a;
 }
 /* line 90, ../sass/screen.scss */
 body .content h5 {
@@ -492,9 +492,9 @@ nav #main-logo img {
   left: 50%;
   display: block;
   margin: 0 auto 0 auto;
-  padding-bottom: 14px;
+  padding-bottom: 30px;
   position: absolute;
-  height: 200px;
+  height: 250px;
   -moz-transform: translate(-50%, 0);
   -ms-transform: translate(-50%, 0);
   -webkit-transform: translate(-50%, 0);
@@ -507,7 +507,7 @@ nav #main-logo img {
 }
 /* line 140, ../sass/screen.scss */
 nav #side-logo {
-  background: #000;
+  background: #ff7f2a;
   position: absolute;
   height: 0px;
   overflow: hidden;
@@ -529,7 +529,7 @@ nav #side-logo img {
 }
 /* line 157, ../sass/screen.scss */
 nav #nav-buttons {
-  border-top: #000 solid 3px;
+  border-top: #ff7f2a solid 3px;
   overflow: hidden;
   height: 44px;
   width: 100%;
@@ -545,7 +545,7 @@ nav #nav-buttons .button-nav {
 }
 /* line 171, ../sass/screen.scss */
 nav #nav-buttons .button-nav p {
-  color: #000;
+  color: #ff7016;
   display: block;
   text-align: center;
   text-transform: uppercase;
@@ -554,7 +554,7 @@ nav #nav-buttons .button-nav p {
 }
 /* line 180, ../sass/screen.scss */
 nav #nav-buttons .button-nav .button-hover {
-  background: #000;
+  background: #ff7f2a;
   color: #fff;
   position: relative;
   text-align: center;
@@ -600,7 +600,7 @@ nav #nav-buttons .button-nav:hover .button-hover {
 }
 /* line 224, ../sass/screen.scss */
 #nav-buttons-top .button-nav p {
-  color: #000;
+  color: #ff7f2a;
   display: block;
   text-align: center;
   text-transform: uppercase;
@@ -609,7 +609,7 @@ nav #nav-buttons .button-nav:hover .button-hover {
 }
 /* line 233, ../sass/screen.scss */
 #nav-buttons-top .button-nav .button-hover {
-  background: #000;
+  background: #ff7f2a;
   color: #fff;
   position: relative;
   text-align: center;
