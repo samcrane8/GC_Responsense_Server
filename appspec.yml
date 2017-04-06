@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
    - source: /
-     destination: /var/www/Mission/html
+     destination: /var/www/html/Mission
 permissions:
    - object: /var/www/html
      pattern: "**"
