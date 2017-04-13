@@ -8,7 +8,34 @@
     <script type="text/javascript" src="js/scripts.js"></script>
   </head>
   <body class="preload">
-    <span id="team" class="tab-switch"></span>
+    <span id="about" class="tab-switch"></span>
+    <div class="content" id="content-about">
+      <h1>About</h1>
+      <h3>Mission</h3>
+      <p>Centree focuses on Smart Cities, IoT [Internet of Things] and reporting emergencies. Our goal is to help cities and IoT companies understand their auditory data, and enable them to automatically detect and respond to emergencies, such as car crashes and car break-ins. Our current focus is on car crashes. Our product SmartBloc is an automated system that alerts Emergency Medical Services [EMS] the moment a car crash has occurred. Using auditory sensors and machine learning we have created boxes that are placed on streets and intersections that listen for car crashes, detect them and report them to the authorities. Reporting a car crash seconds after it happens can significantly reduce the time of response which according to testimonies from Emergency Responders and data from the Atlanta Police Department is enough to have an impact. Even 1 min can save a life and each minute of car-crash caused traffic costs the local economy around $1 million. SmartBloc saves lives, time and money and is an essential part of smart cities.</p>
+      <h3>Market</h3>
+      <p>We are currently working with the Georgia Department of Transportation to test our product by installing units on the locations with the highest rate of crashes in Atlanta, test it and continue improvements. Working with DOTs and smart city initiatives around the US is our primary goal, as they allow us to install our product on poles they own, provide us with funding in most cases and connect us to the EMS and police network that we need. We are also starting the process of working with a towing company in Toronto to install our boxes on intersections around the city that will help them respond to incidents faster, remove the vehicles faster and as a result reduce the traffic caused by these incidents. We are also beginning the process of working with the city of San Francisco to tackle the problem of car break-ins that is becoming worse and worse day by day. We will place our boxes on streets and notify police officers of possible car break-ins so they can respond faster and prevent suspects from leaving the scene. Finally, we have established close relationships with other Smart Cities Startups and researchers in San Francisco and New York and looking into possible co-deployments of our products.</p>
+      <h3>Why Centree</h3>
+      <p>One of the main things we are basing our business off of is selling a platform to cities. There are various startups and companies that go to cities and try to sell them a device that can make their city smarter. Even though their technology might be great, cities can't purchase 10 different devices and install all of these at each intersection all over the city. What we are doing is find a couple of other startups, get them to license their algorithm to us and then we load all the algorithms on our box and sell it to cities as a subscription. Another important part of our business is that we are using auditory data and not visual data. Companies tend to start with visual data and don't really consider audio. Audio takes way less time to process and can give you info that computer vision can't give you, which makes our business more appealing, easy to install and cheap.</p>
+      <p>Cities need to ensure that their citizens get the fastest possible response in the case of an unfortunate accident or other type of emergency. The authorities want to be there at the scene right when these unfortunate events occur, but they can't be everywhere at all times and relying to witnesses to notify them fast enough doesn't work out in a lot of cases. Our product can make EMS' work easier and more efficient, as getting to the scene even 1min earlier can help keep injuries to minimum damage and even save lives. Police work will become easier as well, as it can get them at the scene faster and then any potential suspects won't be able to escape.</p>
+      <h3>Funding</h3>
+      <p>We recently won 2nd place in the HatchPad 2017 People's Choice Awards and are currently participating in the CreateX Launch program in Atlanta.</p>
+      <p>Check out our <a href="https://www.gofundme.com/centree">GoFundMe</a> campaign and feel free to reach out with any questions.</p>
+      <a href="http://hatchpad.co/ideas/SysSE8bwg">
+        <img height="180" width="200" src="resources/hatchpad.png">
+      </a>
+      <a href="http://startupsummer.gatech.edu">
+        <img height="160" width="430" src="resources/createx.png">
+      </a>
+    </div>
+    <span id="map" class="tab-switch"></span>
+    <div class="content" id="content-map">
+      <h1>Tech</h1>
+      <h3>SmartBloc</h3>
+      <p>We have developed a box of auditory sensors that can be placed in streets and can detect crashes or car break-ins. Within the metal box, that we place 12ft high, we have a microphone and other equipment needed for sending the sounds to our AWS, put it through our machine learning model and accordingly alert the authorities or not. We built and are still improving our machine learning model by collecting car crash sounds and glass breaking sounds from car crash testing facilities, specific locations in the city of Atlanta, and online resources. Contact us for more info on our technology!</p>
+      <p> 
+    </div>
+        <span id="team" class="tab-switch"></span>
     <div class="content" id="content-team">
       <h1>The Team</h1>
       <div id="team-blurb">
@@ -63,38 +90,49 @@
         </div>
       </div>
     </div>
-    <span id="about" class="tab-switch"></span>
-    <div class="content" id="content-about">
-      <h1>About</h1>
-      <h3>Problem</h3>
-      <p>The increasing urban population around the globe requires more intelligent, integrated designs to make its cities more resilient to emergencies along transportation infrastructure.
-          Our goal is to develop an automated system to alert emergency medical services (EMS) the moment a car crash has occurred. The idea was inspired by the growing issue of car crashes in Atlanta as well as the fatalities and traffic caused by that. Every year more and more people move to the city, making the roadways more congested and making the interstate system near impossible to navigate during rush hours. Car crashes are a main contributor to that and by reducing the time of response even by a couple of minutes lives, time and money can be saved.</p>
-      <h3>Solution</h3>
-      <p>Our automated system involves a network of physical vibration sensors that remotely detect the crash through machine-learned pattern recognition of the physical vibrations emitted in the event. The current solution is the 911 call: waiting for an onlooker to call and describe the location, situation, and severity of the crash. The response after the 911 call is almost as efficient as possible, and has been optimized thoroughly. A call can take even more than five minutes, between the moment of the crash to the end of the call. Additionally, if there are no onlookers the crash can go unreported. According to EMS even 1 minute can help save someone's life, as first-aid will be able to arrive faster. Moreover, a minute of traffic on the I-75/I-85 connector in Atlanta costs the surrounding economy $1 million, and the impact per minute increases with each minute. </p>
-      <h3>Market</h3>
-      <p>We are currently working with the Georgia Department of Transportation to begin putting units on the road, test their ability, and continue improvements. When we can deliver a technology, the GDOT along other companies working in the Smart Cities field are interested in investing in this infrastructure. We as well are applying to the SmartCity initiative which currently has given money to Columbus, Ohio, and will hopefully be able to develop our technology in this government subsidized environment. With a success in either city, we can then begin moving into other cities or municipalities to build our tech. We engage people by showing how many lives we save and how much more efficient their EMS can be by using our platform. Given the technical background of the group as well as the policy background, we will have the ability to work out issues such as budgeting and applications for grants to make the process as seamless as possible.</p>
-    </div>
-    <span id="map" class="tab-switch"></span>
-    <div class="content" id="content-map">
-      <h1>Don't Panic</h1>
-      <p> 
-    </div>
     <span id="blog" class="tab-switch"></span>
     <div class="content" id="content-blog">
       <article>
         <h1>Test Blog Post</h1>
-        <p>Just making sure this works!</p>
+        <p>Blog coming soon!</p>
         <hr>
-        <span class="date">March 10, 2017</span>
+        <span class="date">April 12, 2017</span>
       </article>
     </div>
     <span id="contact" class="tab-switch"></span>
     <div class="content" id="content-contact">
       <h1>Call Me, Beep Me, If You Want to Reach Me</h1>
       <div id="contact-cols">
-        <div class="contact-column"><img src="resources/profile-pics/Elsa.jpg" alt=""><p>Elsa Perakis - CEO: eperakis@centree.xyz</p></div>
-        <div class="contact-column"><img src="resources/profile-pics/Reid.png" alt=""><p>Reid Clyburn - COO: rclyburn@centree.xyz</p></div>
-        <div class="contact-column"><img src="resources/profile-pics/Grayson.jpg" alt=""><p>Grayson Noah - CTO: gnoah@centree.xyz</p></div>
+        <div class="contact-column">
+          <a href="https://www.linkedin.com/in/elsaperakis/">
+            <img src="resources/profile-pics/Elsa.jpg" alt="">
+          </a>
+          <p>Elsa Perakis - CEO: eperakis@centree.xyz</p>
+        </div>
+        <div class="contact-column">
+          <a href="https://www.linkedin.com/in/reid-clyburn-485b97107/">
+            <img src="resources/profile-pics/Reid.png" alt="">
+          </a>
+          <p>Reid Clyburn - COO: rclyburn@centree.xyz</p> </br>
+        </div>
+        <div class="contact-column">
+          <a href="https://www.linkedin.com/in/grayson-noah-42084994/">
+            <img src="resources/profile-pics/Grayson.jpg" alt="">
+          </a>
+          <p>Grayson Noah - CTO:</br> gnoah@centree.xyz</p> </br>
+        </div>
+        <div class="contact-column">
+          <a href="https://www.linkedin.com/in/samuel-crane-6b459890/">
+            <img src="resources/profile-pics/Sam.jpg" alt="">
+          </a>
+          <p>Sam Crane - VP of Products: scrane@centree.xyz</p> </br>
+        </div>
+        <div class="contact-column">
+          <a href="https://www.linkedin.com/in/brooke-brennan-92bb3aa5/">
+            <img src="resources/profile-pics/Brooke.jpg" alt="">
+          </a>
+          <p>Brooke Brennan - CFO: bbrennan@centree.xyz</p>
+        </div>
       </div>
     </div>
     <nav>
@@ -106,10 +144,6 @@
       </div>
 
       <div id="nav-buttons-top">
-        <a href="#team" class="button-nav" id="nav-team">
-          <p href="#team">Team</p>
-          <div class="button-hover nav"><div>Team</div></div>
-        </a>
         <a href="#about" class="button-nav" id="nav-about">
           <p href="#about">About</p>
           <div class="button-hover nav"><div>About</div></div>
@@ -117,6 +151,10 @@
         <a href="#map" class="button-nav" id="nav-map">
           <p href="#map">Tech</p>
           <div class="button-hover nav"><div>Tech</div></div>
+        </a>
+         <a href="#team" class="button-nav" id="nav-team">
+          <p href="#team">Team</p>
+          <div class="button-hover nav"><div>Team</div></div>
         </a>
         <a href="#blog" class="button-nav" id="nav-blog">
           <p href="#blog">Blog</p>
@@ -129,10 +167,6 @@
       </div>
 
       <div id="nav-buttons">
-        <a href="#team" class="button-nav" id="nav-team">
-          <p href="#team">Team</p>
-          <div class="button-hover nav"><div>Team</div></div>
-        </a>
         <a href="#about" class="button-nav" id="nav-about">
           <p href="#about">About</p>
           <div class="button-hover nav"><div>About</div></div>
@@ -140,6 +174,10 @@
         <a href="#map" class="button-nav" id="nav-map">
           <p href="#map">Tech</p>
           <div class="button-hover nav"><div>Tech</div></div>
+        </a>
+        <a href="#team" class="button-nav" id="nav-team">
+          <p href="#team">Team</p>
+          <div class="button-hover nav"><div>Team</div></div>
         </a>
         <a href="#blog" class="button-nav" id="nav-blog">
           <p href="#blog">Blog</p>
