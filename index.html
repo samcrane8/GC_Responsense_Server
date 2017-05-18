@@ -1,350 +1,193 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
-<head>
-  <title>Centree Technologies</title>
-  <link rel="icon" type="image/png" href="webpage/resources/BigClearLogo.png" sizes="16x16">
-  <link rel="stylesheet" type="text/css" href="stylesheets/screen.css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="scripts/scripts.js"></script>
-  <meta http-equiv="refresh" content="0; url=http://centree.xyz/Mission" />
-</head>
-<body>
-  <img src="webpage/resources/hole.png" alt="" id="hole">
-  <div class="hole-margin" id="hm-left"></div>
-  <div class="hole-margin" id="hm-right"></div>
-  <div class="hole-margin" id="hm-up"></div>
-  <div class="hole-margin" id="hm-down"></div>
-  <div id="hole-blocker"></div>
-  <div class="content">
-    <div class="logo-nav">
-      <img id="main-logo" src="webpage/resources/logo.gif" alt="responsense">
+  <head>
+    <title>Centree Technologies</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/screen.css">
+    <link rel="icon" type="image/png" href="resources/BigClearLogo.png" sizes="16x16">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+  </head>
+  <body class="preload">
+    <span id="about" class="tab-switch"></span>
+    <div class="content" id="content-about">
+      <h1>About</h1>
+      <h3>Mission</h3>
+      <p>Centree focuses on Smart Cities, IoT [Internet of Things] and reporting emergencies. Our goal is to help cities and IoT companies understand their auditory data, and enable them to automatically detect and respond to emergencies, such as car crashes and car break-ins. Our current focus is on car crashes. Our product SmartBloc is an automated system that alerts Emergency Medical Services [EMS] the moment a car crash has occurred. Using auditory sensors and machine learning we have created boxes that are placed on streets and intersections that listen for car crashes, detect them and report them to the authorities. Reporting a car crash seconds after it happens can significantly reduce the time of response which according to testimonies from Emergency Responders and data from the Atlanta Police Department is enough to have an impact. Even 1 min can save a life and each minute of car-crash caused traffic costs the local economy around $1 million. SmartBloc saves lives, time and money and is an essential part of smart cities.</p>
+      <h3>Market</h3>
+      <p>We are currently working with the Georgia Department of Transportation to test our product by installing units on the locations with the highest rate of crashes in Atlanta, test it and continue improvements. Working with DOTs and smart city initiatives around the US is our primary goal, as they allow us to install our product on poles they own, provide us with funding in most cases and connect us to the EMS and police network that we need. We are also starting the process of working with a towing company in Toronto to install our boxes on intersections around the city that will help them respond to incidents faster, remove the vehicles faster and as a result reduce the traffic caused by these incidents. We are also beginning the process of working with the city of San Francisco to tackle the problem of car break-ins that is becoming worse and worse day by day. We will place our boxes on streets and notify police officers of possible car break-ins so they can respond faster and prevent suspects from leaving the scene. Finally, we have established close relationships with other Smart Cities Startups and researchers in San Francisco and New York and looking into possible co-deployments of our products.</p>
+      <h3>Why Centree</h3>
+      <p>One of the main things we are basing our business off of is selling a platform to cities. There are various startups and companies that go to cities and try to sell them a device that can make their city smarter. Even though their technology might be great, cities can't purchase 10 different devices and install all of these at each intersection all over the city. What we are doing is find a couple of other startups, get them to license their algorithm to us and then we load all the algorithms on our box and sell it to cities as a subscription. Another important part of our business is that we are using auditory data and not visual data. Companies tend to start with visual data and don't really consider audio. Audio takes way less time to process and can give you info that computer vision can't give you, which makes our business more appealing, easy to install and cheap.</p>
+      <p>Cities need to ensure that their citizens get the fastest possible response in the case of an unfortunate accident or other type of emergency. The authorities want to be there at the scene right when these unfortunate events occur, but they can't be everywhere at all times and relying to witnesses to notify them fast enough doesn't work out in a lot of cases. Our product can make EMS' work easier and more efficient, as getting to the scene even 1min earlier can help keep injuries to minimum damage and even save lives. Police work will become easier as well, as it can get them at the scene faster and then any potential suspects won't be able to escape.</p>
+      <h3>Funding</h3>
+      <p>We recently won 2nd place in the HatchPad 2017 People's Choice Awards and are currently participating in the CreateX Launch program in Atlanta.</p>
+      <p>Check out our <a href="https://www.gofundme.com/centree">GoFundMe</a> campaign and feel free to reach out with any questions.</p>
+      <a href="http://hatchpad.co/ideas/SysSE8bwg">
+        <img height="180" width="200" src="resources/hatchpad.png">
+      </a>
+      <a href="http://startupsummer.gatech.edu">
+        <img height="160" width="430" src="resources/createx.png">
+      </a>
+    </div>
+    <span id="map" class="tab-switch"></span>
+    <div class="content" id="content-map">
+      <h1>Tech</h1>
+      <h3>SmartBloc</h3>
+      <p>We have developed a box of auditory sensors that can be placed in streets and can detect crashes or car break-ins. Within the metal box, that we place 12ft high, we have a microphone and other equipment needed for sending the sounds to our AWS, put it through our machine learning model and accordingly alert the authorities or not. We built and are still improving our machine learning model by collecting car crash sounds and glass breaking sounds from car crash testing facilities, specific locations in the city of Atlanta, and online resources. Contact us for more info on our technology!</p>
+      <p> 
+    </div>
+        <span id="team" class="tab-switch"></span>
+    <div class="content" id="content-team">
+      <h1>The Team</h1>
+      <div id="team-blurb">
+        <p>Our team is comprised of 5 Georgia Tech students in the Computer Science, Electrical Engineering, Business and Public Policy departments. We have gained a lot of experience through individual internships (Microsoft, Cisco, Adobe, General Electric), research projects (IoT, Audio Analysis, Data Storage) and leadership positions in organizations (Grand Challenges, Diversity Ambassadors, Greek Life, Robogals, Girls Who Code, Wreck Camp) that have been extremely helpful in our journey up to this point. We are a diverse group of people with strong leadership, networking, and technical backgrounds that are passionate to do great things. </p>
+      </div>
+      <div class="profile-column">
+        <div class="profile-pic" id="shnoogles">
+          <img src="resources/profile-pics/Elsa.jpg" alt="placeholder+image">
+          <div class="details"></div>
+          <div class="basic">
+            <h4>Elsa Perakis</h4>
+            <h5>CEO</h5>
+          </div>
+        </div>
+        <div class="profile-pic" id="flopsy">
+          <img src="resources/profile-pics/Reid.png" alt="placeholder+image">
+          <label for="flopsy-det"></label>
+          <div class="details"></div>
+          <div class="basic">
+            <h4>Reid Clyburn</h4>
+            <h5>COO</h5>
+          </div>
+        </div>
+      </div>
+      <div class="profile-column">
+        <div class="profile-pic" id="Flerp">
+          <img src="resources/profile-pics/Grayson.jpg" alt="placeholder+image">
+          <div class="details"></div>
+          <div class="basic">
+            <h4>Grayson Noah</h4>
+            <h5>CTO</h5>
+          </div>
+        </div>
+        <div class="profile-pic" id="Lep">
+          <img src="resources/profile-pics/Brooke.jpg" alt="placeholder+image">
+          <div class="details"></div>
+          <div class="basic">
+            <h4>Brooke Brennan</h4>
+            <h5>CFO</h5>
+          </div>
+        </div>
+      </div>
+      
+      <div class="profile-column">
+        <div class="profile-pic" id="Steven">
+          <img src="resources/profile-pics/Sam.jpg" alt="placeholder+image">
+          <div class="details"></div>
+          <div class="basic">
+            <h4>Sam Crane</h4>
+            <h5>VP of Products</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span id="blog" class="tab-switch"></span>
+    <div class="content" id="content-blog">
+      <article>
+        <h1>Test Blog Post</h1>
+        <p>Blog coming soon!</p>
+        <hr>
+        <span class="date">April 12, 2017</span>
+      </article>
+    </div>
+    <span id="contact" class="tab-switch"></span>
+    <div class="content" id="content-contact">
+      <h1>Call Me, Beep Me, If You Want to Reach Me</h1>
+      <div id="contact-cols">
+        <div class="contact-column">
+          <a href="https://www.linkedin.com/in/elsaperakis/">
+            <img src="resources/profile-pics/Elsa.jpg" alt="">
+          </a>
+          <p>Elsa Perakis - CEO: eperakis@centree.xyz</p>
+        </div>
+        <div class="contact-column">
+          <a href="https://www.linkedin.com/in/reid-clyburn-485b97107/">
+            <img src="resources/profile-pics/Reid.png" alt="">
+          </a>
+          <p>Reid Clyburn - COO: rclyburn@centree.xyz</p> </br>
+        </div>
+        <div class="contact-column">
+          <a href="https://www.linkedin.com/in/grayson-noah-42084994/">
+            <img src="resources/profile-pics/Grayson.jpg" alt="">
+          </a>
+          <p>Grayson Noah - CTO:</br> gnoah@centree.xyz</p> </br>
+        </div>
+        <div class="contact-column">
+          <a href="https://www.linkedin.com/in/samuel-crane-6b459890/">
+            <img src="resources/profile-pics/Sam.jpg" alt="">
+          </a>
+          <p>Sam Crane - VP of Products: scrane@centree.xyz</p> </br>
+        </div>
+        <div class="contact-column">
+          <a href="https://www.linkedin.com/in/brooke-brennan-92bb3aa5/">
+            <img src="resources/profile-pics/Brooke.jpg" alt="">
+          </a>
+          <p>Brooke Brennan - CFO: bbrennan@centree.xyz</p>
+        </div>
+      </div>
+    </div>
+    <nav>
+      <a href="#" id="side-logo">
+        <img src="resources/centree-logo-white.svg" alt="this.src='centree-logo-white.png'">
+      </a>
+      <div id="main-logo">
+        <img src="resources/centreewall2.png" onerror="this.src='centree-logo.png'">
+      </div>
+
+      <div id="nav-buttons-top">
+        <a href="#about" class="button-nav" id="nav-about">
+          <p href="#about">About</p>
+          <div class="button-hover nav"><div>About</div></div>
+        </a>
+        <a href="#map" class="button-nav" id="nav-map">
+          <p href="#map">Tech</p>
+          <div class="button-hover nav"><div>Tech</div></div>
+        </a>
+         <a href="#team" class="button-nav" id="nav-team">
+          <p href="#team">Team</p>
+          <div class="button-hover nav"><div>Team</div></div>
+        </a>
+        <a href="#blog" class="button-nav" id="nav-blog">
+          <p href="#blog">Blog</p>
+          <div class="button-hover nav"><div>Blog</div></div>
+        </a>
+        <a href="#contact" class="button-nav" id="nav-contact">
+          <p href="#contact">Contact</p>
+          <div class="button-hover nav"><div>Contact</div></div>
+        </a>
+      </div>
+
       <div id="nav-buttons">
-        <div class="button cent top" id="map">
-          <p>Tech</p>
-        </div>
-        <div class="button cent right" id="contact">
-          <p>Contact</p>
-        </div>
-        <div class="button cent right" id="blog">
-          <p>Blog</p>
-        </div>
-        <div class="button cent left" id="team">
-          <p>Team</p>
-        </div>
-        <div class="button cent left" id="about">
-          <p>About</p>
-        </div>
+        <a href="#about" class="button-nav" id="nav-about">
+          <p href="#about">About</p>
+          <div class="button-hover nav"><div>About</div></div>
+        </a>
+        <a href="#map" class="button-nav" id="nav-map">
+          <p href="#map">Tech</p>
+          <div class="button-hover nav"><div>Tech</div></div>
+        </a>
+        <a href="#team" class="button-nav" id="nav-team">
+          <p href="#team">Team</p>
+          <div class="button-hover nav"><div>Team</div></div>
+        </a>
+        <a href="#blog" class="button-nav" id="nav-blog">
+          <p href="#blog">Blog</p>
+          <div class="button-hover nav"><div>Blog</div></div>
+        </a>
+        <a href="#contact" class="button-nav" id="nav-contact">
+          <p href="#contact">Contact</p>
+          <div class="button-hover nav"><div>Contact</div></div>
+        </a>
       </div>
-      <div id="nav-buttons-side">
-        <div id="nb-map" class="button side">
-          <div class="nb-ico">
-            <img src="webpage/resources/map_ico.png" alt=""  id="">
-            <!-- <div class="cover"></div> -->
-          </div>
-          <p>Tech</p>
-        </div>
-        <div id="nb-about"class="button side">
-          <div class="nb-ico">
-            <img src="webpage/resources/about_ico.png" alt=""  id="">
-            <!-- <div class="cover"></div> -->
-          </div>
-          <p>About</p>
-        </div>
-        <div id="nb-blog" class="button side">
-          <div class="nb-ico">
-            <img src="webpage/resources/blog_ico.png" alt=""  id="">
-            <!-- <div class="cover"></div> -->
-          </div>
-          <p>Blog</p>
-        </div>
-        <div id="nb-team" class="button side">
-          <div class="nb-ico">
-            <img src="webpage/resources/team_ico.png" alt=""  id="">
-            <!-- <div class="cover"></div> -->
-          </div>
-          <p>Team</p>
-        </div>
-        <div id="nb-contact" class="button side">
-          <div class="nb-ico">
-            <img src="webpage/resources/contact_ico.png" alt=""  id="">
-            <!-- <div class="cover"></div> -->
-          </div>
-          <p>Contact</p>
-        </div>
-      </div>
-    </div>
-    <!--<div class="text.map">
-      <article class="1">
-        <h1>
-          Map
-        </h1>
-        <p>
-          The increasingly urban population around the globe will need more intelligent, integrated designs to make it’s cities more resilient to emergencies along transportation infrastructure, in neighborhoods, or in highly-trafficked public space. 
-		  Our goal is to develop an automated system to alert emergency medical services (EMS) the moment a car crash has occurred. The idea was inspired by the growing issue of traffic in Atlanta: every year more people move to the city, making our roadways more congested and making the interstate system near impossible to navigate during rush hours. Car crashes only compound this issue, and when lives are at stake as well, a more intelligent system is imperative.
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Go-To-Market Strategy
-        </h1>
-        <p>
-          We are currently working with the GDOT to begin putting units on the road, test their ability, and continue improvements. When we can deliver a technology, the GDOT is interested in investing in this infrastructure. We as well are applying to the SmartCity initiative which currently has given money to Columbus, Ohio, and will hopefully be able to develop our technology in this Government subsidized environment. With a success in either city, we can then begin moving into other cities or municipalities to build our tech. We engage people by showing how many lives we save and how much more efficient their EMS are. Given the policy background of the group as well as the technical background, we will have the ability to as well work out issues such as budgeting and applications for grants to make the process as seamless as possible.
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Team
-        </h1>
-        <p>
-          Our team is comprised of 5 Georgia Tech students in the Computer Science, Electrical Engineering, Business and Public Policy departments. We have gained a lot of experience through individual internships (Microsoft, Cisco, General Electric), research projects (IoT, Audio Analysis, Data Storage) and leadership experience (Grand Challenges, Diversity Ambassadors, Greek Life, Robogals, Girls Who Code, Wreck Camp) that have been extremely helpful in our journey up to this point. We are a diverse group of people with strong leadership, networking, and technical backgrounds and even though we are just students in college we have the passion to do great things.
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Problem
-        </h1>
-        <p>
-          The issue lies in the increasing stress on transportation infrastructure in American cities. People living in the city are seeing greater traffic in roadways and need revamped mass-transportation. In terms of customers, we’re seeing policymakers looking for solutions to the issues that plague their constituencies.
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Solution
-        </h1>
-        <p>
-          Our automated system involves a network of physical vibration sensors that remotely detect the crash through machine-learned pattern recognition of the physical vibrations emitted in the event. The current solution is the 911 call: waiting for an onlooker to call and describe the location, situation, and severity of the crash. The response after the 911 call is almost as efficient as possible, and has been optimized thoroughly. A call can take five minutes, between the moment of the crash to the end of the call. Also if there are no onlookers the crash can go unreported. A minute on the I-75/I-85 connector in Atlanta costs the surrounding economy $7 million, and the impact per minute increases with each minute. As well, secondary crashes caused by the initial crash are common and more fatal than the initial crash.
-        </p>
-      </article>
-    </div>-->
-    <div class="text content map" style="display: none">
-      <article class="1">
-        <h1>
-          Smartbloc Hardware
-        </h1>
-        <p>
-          Pulling from resources across the world, we've developed a box capable of listening to the sounds of the city. Installation is simple: attach to city streetlamps, connect to power and internet, and let us do the rest.
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Cloud-Based Analysis
-        </h1>
-        <p>
-          Each box is setup to send data to our cloud-based system that can do the data-intensive analytics required in classifying these loud noises. 
-        </p>
-      </article>
-    </div>
-    <div class="text content about" style="display: none">
-      <article class="1">
-        <h1>
-          Problem
-        </h1>
-        <p>
-          The increasing urban population around the globe requires more intelligent, integrated designs to make its cities more resilient to emergencies along transportation infrastructure.
-          Our goal is to develop an automated system to alert emergency medical services (EMS) the moment a car crash has occurred. The idea was inspired by the growing issue of car crashes in Atlanta as well as the fatalities and traffic caused by that. Every year more and more people move to the city, making the roadways more congested and making the interstate system near impossible to navigate during rush hours. Car crashes are a main contributor to that and by reducing the time of response even by a couple of minutes lives, time and money can be saved.
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Solution
-        </h1>
-        <p>
-          Our automated system involves a network of physical vibration sensors that remotely detect the crash through machine-learned pattern recognition of the physical vibrations emitted in the event. The current solution is the 911 call: waiting for an onlooker to call and describe the location, situation, and severity of the crash. The response after the 911 call is almost as efficient as possible, and has been optimized thoroughly. A call can take even more than five minutes, between the moment of the crash to the end of the call. Additionally, if there are no onlookers the crash can go unreported. According to EMS even 1 minute can help save someone's life, as first-aid will be able to arrive faster. Moreover, a minute of traffic on the I-75/I-85 connector in Atlanta costs the surrounding economy $1 million, and the impact per minute increases with each minute. 
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Market
-        </h1>
-        <p>
-          We are currently working with the Georgia Department of Transportation to begin putting units on the road, test their ability, and continue improvements. When we can deliver a technology, the GDOT along other companies working in the Smart Cities field are interested in investing in this infrastructure. We as well are applying to the SmartCity initiative which currently has given money to Columbus, Ohio, and will hopefully be able to develop our technology in this government subsidized environment. With a success in either city, we can then begin moving into other cities or municipalities to build our tech. We engage people by showing how many lives we save and how much more efficient their EMS can be by using our platform. Given the technical background of the group as well as the policy background, we will have the ability to work out issues such as budgeting and applications for grants to make the process as seamless as possible.
-        </p>
-      </article>
-    </div>
-    <div class="text content blog" style="display: none">
-      <article class="1">
-        <h1>
-          Blog
-        </h1>
-        <p>
-          Blog coming soon!
-        </p>
-      </article>
-    </div>
-    <div class="text content team" style="display: none">
-      <article class="1">
-        <h1>
-          Team
-        </h1>
-        <p>
-          Our team is comprised of 5 Georgia Tech students in the Computer Science, Electrical Engineering, Business and Public Policy departments. We have gained a lot of experience through individual internships (Microsoft, Cisco, Adobe, General Electric), research projects (IoT, Audio Analysis, Data Storage) and leadership positions in organizations (Grand Challenges, Diversity Ambassadors, Greek Life, Robogals, Girls Who Code, Wreck Camp) that have been extremely helpful in our journey up to this point. We are a diverse group of people with strong leadership, networking, and technical backgrounds that are passionate to do great things.
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Reid Clyburn - CEO
-        </h1>
-        <p>
-        <img src="webpage/resources/Reid.jpg" alt="" id="">
-        </p>
-        <p>
-          Meet Reid Clyburn. Reid is a Co-Founder of Centree and currently has the role of the CEO. As CEO, he provides valuable insight into the long term direction of the company, by developing a deep understanding of the surrounding market and competitors through research and networking. He oversees day to day operations to ensure they coincide with the company vision.
-        </p>
-        <p>
-          Reid is from Grayson, Georgia. He is a 2nd year Electrical Engineering major and a business management minor through the Denning Technology and Management Program at the Georgia Institute of Technology. He has gained experience by doing research in IoT routing algorithms and simulations at Georgia Tech, and by interning at AT&T. He has also involved on campus by being marshall and brotherhood development director of Alpha Sigma Phi fraternity, the Eta Kappa Nu Honor Society social chair, and an opportunity research scholar. He was also 1 of the 10 students from the US that were awarded the William Jefferson Clinton Scholarship for attendance of the American University in Dubai.
-        </p>
-        <p>
-          Contact: rclyburn@centree.xyz
-        </p>
-        <p>
-          LinkedIn: https://www.linkedin.com/in/reid-clyburn-485b97107
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Elsa Perakis - CNO
-        </h1>
-        <p>
-        <img src="webpage/resources/Elsa.jpg" alt="" id="">
-        </p>
-        <p>
-          Meet Elsa Perakis. Elsa is a Co-Founder of Centree and currently has the role of the CNO. As Chief Networking Officer, she is in charge of networking, contacting sponsors, finding partners,
-          reaching out to people through social media and the website, as well as finding resources such as databases that help develop the product. She is working closely with the CEO and VP of Product to find the appropriate resources and people needed for 
-          developing the product. 
-        </p>
-        <p>
-          Elsa is from Heraklion, Greece. She is a 2nd year Computer Science major and Public Policy minor at the Georgia Institute of Technology and has gained experience by interning at Microsoft and Adobe, and doing data storage and optimization research at Georgia Tech and MIT. She is also involved on campus by being the Robogals President, Girls Who Code Teaching Assistant, Grand Challenges Media Chair and Ambassador, a Diversity and International Ambassador, the treasurer for Hellenic Society and the European Horizons Secretary and External Head Coordinator. She has also been awarded the Adobe Research Women-­In-Technology Scholarship, as well as the Microsoft Diversity Women-­In-Technology award.
-        </p>
-        <p>
-          Contact: eperakis@centree.xyz
-        </p>
-        <p>
-          LinkedIn: https://www.linkedin.com/in/elsaperakis
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Grayson Noah - CTO
-        </h1>
-        <p>
-        <img src="webpage/resources/Grayson.jpg" alt="" id="">
-        </p>
-        <p>
-          Meet Grayson Noah. Grayson is a Co-Founder of Centree and currently has the role of the CTO. As the CTO, he is the head of the technical division, defining the technical direction of the company through research and testing, while using his skills and expertise to rapidly prototype.
-        </p>
-        <p>
-          Grayson is from Sugar Hill, Georgia. He is a 2nd year Electrical Engineering major at the Georgia Institute of Technology and has gained 
-          experience by interning at Cisco Systems and Texas Instruments, doing projects in signal processing and graphics design, and being involved on campus as the Alpha Sigma Phi Fraternity Sergeant-at-Arms and Secretary, the Eta Kappa Nu Honor Society Publicity Chair, Annual Report Chair, and the Corporate Sponsorship Chair.
-        </p>
-        <p>
-          Contact: gnoah@centree.xyz
-        </p>
-        <p>
-          LinkedIn: https://www.linkedin.com/in/grayson-noah-42084994
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Brooke Brennan - CFO
-        </h1>
-        <p>
-        <img src="webpage/resources/Brooke.jpg" alt="" id="">
-        </p>
-        <p>
-          Meet Brooke Brennan. Brooke is a Co-Founder of Centree and currently has the role of the CFO.
-          As Chief Financial Officer, she maintains the budget and finances, works with all legal documents, and maintains records. She also helps the CNO and CTO with funding, partnerships, customers, and technical support. 
-        </p>
-        <p>
-          Brooke is from New Orleans, Louisiana. She is a 2nd year Electrical Engineering major at the Georgia Institute of Technology and has gained experience by interning at General Electric and a Law Firm. She is also involved on campus by being on the Grand Challenges Exec. Board and Ambassadors team, the Alpha Delta Pi Sorority Leadership Chair, a College of Engineering Ambassador and a Wreck Camp Freshman Orientation Counselor.
-        </p>
-        <p>
-          Contact: bbrennan@centree.xyz
-        </p>
-        <p>
-          LinkedIn: https://www.linkedin.com/in/brooke-brennan-92bb3aa5
-        </p>
-      </article>
-      <article class="2">
-        <h1>
-          Sam Crane - VP of Product
-        </h1>
-        <p>
-        <img src="webpage/resources/Sam.jpg" alt="" id="">
-        </p>
-        <p>
-          Meet Sam Crane. Sam is a Co-Founder of Centree and currently has the role of the VP of Product.
-          As the VP of Product, he is in charge of designing the product, working with the CTO on budgeting and the technical aspects of the product. He is the point of contact, representative, and advocate for our employees working on the technical side of the product, such as hardware and machine learning.
-        </p>
-        <p>
-          Sam is from Sandy Springs, Georgia. He is a 2nd year Computer Science and Public Policy double major at the Georgia Institute of Technology. He has gained technical experience in various languages (Java, C++, C, R, SQL, HTML, Node, Javascript, etc…), as well as in machining (router, mill, lathe, plasma cutter, etc…), Solidworks and Printed Circuit Board (PCB) design. He has enjoyed project management for a long-time, leading the programming division of his high school robotics team and then the entire team his last year. He was a Goat Farm Field Experiment Finalist (1 of 5 teams selected from 137 applicants from 5 countries), with $2,000 in funding to help improve Atlanta and the opportunity to showcase the robotic mural painting “Color Slug”. 
-        </p>
-        <p>
-          Contact: scrane@centree.xyz
-        </p>
-      </article>
-    </div>
-    <div class="text content contact" style="display: none">
-      <article class="1">
-        <h1>
-          Want to Contact Us?
-        </h1>
-        <p>
-          Interested in the tech we're working on? Want to get more information? 
-        </p>
-        <p>
-          Contact us: 
-        </p>
-        <article class="2">
-          <p>
-            <img src="webpage/resources/Elsa Cir.png" alt="" id="" align="left">
-            <h2>
-              Elsa Perakis - CNO: eperakis@centree.xyz
-            </h2>
-          </p>
-        </article>
-        <article class="2">
-          <p>
-            <img src="webpage/resources/Reid Cir.png" alt="" id="" align="left">
-            <h2>
-              Reid Clyburn - CEO: rclyburn@centree.xyz
-            </h2>
-          </p>
-        </article>
-        <article class="2">
-          <p>
-            <img src="webpage/resources/Grayson Cir.png" alt="" id="" align="left">
-            <h2>
-              Grayson Noah - CTO: gnoah@centree.xyz
-            </h2>
-          </p>
-        </article>
-      </article>
-    </div>
-  </div>
-</body>
+    </nav>
+  </body>
 </html>
-<!-- <div id="nb-about" class="nav-button">
-        <div class="nb-text"
-          About Us
-        </div>
-      </div>
-      <div id="nb-contact" class="nav-button">
-        <div class="nb-text">
-          Contact
-        </div>
-      </div>
-      <div id="nb-cs-0" class="nav-button">
-        <div class="nb-text">
-          Coming Soon
-        </div>
-      </div>
-      <div id="nb-cs-1" class="nav-button">
-        <div class="nb-text">
-          Coming Soon
-        </div>
-      </div>
-      <div id="nb-cs-2" class="nav-button">
-        <div class="nb-text">
-          Coming Soon
-        </div>
-      </div> -->
